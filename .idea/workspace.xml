@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="" />
+    <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +46,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -43,6 +63,7 @@
       <updated>1582605360499</updated>
       <workItem from="1582605361831" duration="249000" />
       <workItem from="1582605886855" duration="117000" />
+      <workItem from="1582606245922" duration="614000" />
     </task>
     <servers />
   </component>
@@ -50,9 +71,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="171" key="SettingsEditor" timestamp="1582605628741">
+    <state x="491" y="171" key="SettingsEditor" timestamp="1582606607852">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582605628741" />
+    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582606607852" />
   </component>
 </project>
