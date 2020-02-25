@@ -41,5 +41,6 @@ public class BaseTest {
     public String randomEmail() {
         String email = "testMealsuite";
 //        int randomNumber = round(Math.)
+        return email;
     }
 }
