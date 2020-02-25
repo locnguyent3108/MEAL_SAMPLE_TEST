@@ -4,7 +4,7 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest {
+public class CreateNewAccountTest extends BaseTest {
 
     @Test
     public void createUserWithValidInformationTest() {
@@ -15,8 +15,13 @@ public class LoginTest extends BaseTest {
 
         dashBoardPage.navigateUserDashboard()
                 .addNewUser()
-                .setFirstNameLastName("test", "mealsuite")
-                .selectLanguage("French");
+                .setFirstName("test")
+                .setLastName("MealSuite")
+                .setEmail(randomEmail())
+                .selectLanguage("French")
+                .selectSystem("THS")
+                .submitForm()
+        .verifyAccountCreateSuccess();
 
     }
 }

@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.math.BigInteger;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -39,8 +41,7 @@ public class BaseTest {
     }
 
     public String randomEmail() {
-        String email = "testMealsuite";
-//        int randomNumber = round(Math.)
-        return email;
+        String randomMail = "test" + (int)(Math.random() * 5000 + 1) + "@yopmail.com";
+        return randomMail;
     }
 }

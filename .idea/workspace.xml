@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +50,68 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RunManager" selected="TestNG.CreateNewAccountTest.createUserWithValidInformationTest">
+    <configuration name="CreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.CreateNewAccountTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewAccountTest.createUserWithValidInformationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.CreateNewAccountTest" />
+      <option name="METHOD_NAME" value="createUserWithValidInformationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="temp.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.temp" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CreateNewAccountTest.createUserWithValidInformationTest" />
+        <item itemvalue="TestNG.CreateNewAccountTest" />
+        <item itemvalue="TestNG.temp.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,9 +132,87 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="171" key="SettingsEditor" timestamp="1582606607852">
+    <state x="329" y="271" key="#com.intellij.ide.util.MemberChooser" timestamp="1582618241403">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582606607852" />
+    <state x="329" y="271" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1018@0.23.1920.1018" timestamp="1582618241403" />
+    <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582620924880">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620924880" />
+    <state width="983" height="342" key="GridCell.Tab.0.bottom" timestamp="1582622435526">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435526" />
+    <state width="983" height="342" key="GridCell.Tab.0.center" timestamp="1582622435522">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435522" />
+    <state width="983" height="342" key="GridCell.Tab.0.left" timestamp="1582622435514">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435514" />
+    <state width="983" height="342" key="GridCell.Tab.0.right" timestamp="1582622435524">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435524" />
+    <state width="983" height="342" key="GridCell.Tab.1.bottom" timestamp="1582622435291">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435291" />
+    <state width="983" height="342" key="GridCell.Tab.1.center" timestamp="1582622435290">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.1.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435290" />
+    <state width="983" height="342" key="GridCell.Tab.1.left" timestamp="1582622435290">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.1.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435290" />
+    <state width="983" height="342" key="GridCell.Tab.1.right" timestamp="1582622435291">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="983" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582622435291" />
+    <state x="491" y="171" key="SettingsEditor" timestamp="1582618905400">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582618905400" />
+    <state width="512" height="509" key="XDebugger.FullValuePopup" timestamp="1582622230437">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state width="512" height="509" key="XDebugger.FullValuePopup/0.23.1920.1018@0.23.1920.1018" timestamp="1582622230437" />
+    <state x="213" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1582620377503">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="213" y="160" key="refactoring.ChangeSignatureDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620377503" />
+    <state x="1132" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1582616239134">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="1132" y="246" width="672" height="678" key="search.everywhere.popup/0.23.1920.1018@0.23.1920.1018" timestamp="1582616239134" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/BasePage.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
