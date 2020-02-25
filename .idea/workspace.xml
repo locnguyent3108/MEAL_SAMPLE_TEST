@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/mealsuite_automation.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/TestUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,11 +196,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
           <line>116</line>
           <option name="timeStamp" value="14" />
@@ -206,11 +204,6 @@
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
           <line>132</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pages/BasePage.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

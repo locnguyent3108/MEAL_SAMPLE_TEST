@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 public class CreateNewAccountTest extends BaseTest {
 
+    //create user with valid information
     @Test
     public void createUserWithValidInformationTest() {
         LoginPage loginPage = new LoginPage(driver);
@@ -22,6 +23,11 @@ public class CreateNewAccountTest extends BaseTest {
                 .selectSystem("THS")
                 .submitForm()
         .verifyAccountCreateSuccess();
+    }
+
+    //create with empty value
+    @Test
+    public void createUserWithEmptyAllField() {
 
     }
 }
