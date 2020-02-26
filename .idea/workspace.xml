@@ -2,17 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testcases/DeleteUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.bash_profile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/EditUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/DeleteUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/DeleteUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/TestUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -75,7 +85,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateNewAccountTest.createUserWithEmptyAllField">
+  <component name="RunManager" selected="TestNG.EditUserTest.editUserWithNewInformation">
     <configuration name="CreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -129,6 +139,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EditUserTest.editUserWithNewInformation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.EditUserTest" />
+      <option name="METHOD_NAME" value="editUserWithNewInformation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="temp.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -149,8 +177,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateNewAccountTest.createUserWithEmptyAllField" />
+        <item itemvalue="TestNG.EditUserTest.editUserWithNewInformation" />
         <item itemvalue="TestNG.CreateNewAccountTest.createUserWithValidInformationTest" />
+        <item itemvalue="TestNG.CreateNewAccountTest.createUserWithEmptyAllField" />
         <item itemvalue="TestNG.CreateNewAccountTest" />
         <item itemvalue="TestNG.temp.test" />
       </list>
@@ -169,7 +198,7 @@
       <workItem from="1582605361831" duration="249000" />
       <workItem from="1582605886855" duration="117000" />
       <workItem from="1582606245922" duration="682000" />
-      <workItem from="1582687639323" duration="9645000" />
+      <workItem from="1582687639323" duration="17210000" />
     </task>
     <servers />
   </component>
@@ -180,6 +209,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1093" y="305" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582710976693">
+      <screen x="0" y="23" width="1920" height="1018" />
+    </state>
+    <state x="1093" y="305" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582710976692" />
     <state x="329" y="271" key="#com.intellij.ide.util.MemberChooser" timestamp="1582618241403">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -188,42 +221,42 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620924880" />
-    <state width="1088" height="277" key="GridCell.Tab.0.bottom" timestamp="1582703652225">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom" timestamp="1582713145931">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652225" />
-    <state width="1088" height="277" key="GridCell.Tab.0.center" timestamp="1582703652220">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582713145931" />
+    <state width="1088" height="277" key="GridCell.Tab.0.center" timestamp="1582713145930">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652220" />
-    <state width="1088" height="277" key="GridCell.Tab.0.left" timestamp="1582703652219">
+    <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582713145930" />
+    <state width="1088" height="277" key="GridCell.Tab.0.left" timestamp="1582713145930">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652219" />
-    <state width="1088" height="277" key="GridCell.Tab.0.right" timestamp="1582703652222">
+    <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582713145930" />
+    <state width="1088" height="277" key="GridCell.Tab.0.right" timestamp="1582713145930">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652222" />
-    <state width="918" height="342" key="GridCell.Tab.1.bottom" timestamp="1582693487981">
+    <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582713145930" />
+    <state width="1088" height="342" key="GridCell.Tab.1.bottom" timestamp="1582712003489">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582693487981" />
-    <state width="918" height="342" key="GridCell.Tab.1.center" timestamp="1582693487981">
+    <state width="1088" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582712003489" />
+    <state width="1088" height="342" key="GridCell.Tab.1.center" timestamp="1582712003488">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="342" key="GridCell.Tab.1.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582693487981" />
-    <state width="918" height="342" key="GridCell.Tab.1.left" timestamp="1582693487980">
+    <state width="1088" height="342" key="GridCell.Tab.1.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582712003488" />
+    <state width="1088" height="342" key="GridCell.Tab.1.left" timestamp="1582712003488">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="342" key="GridCell.Tab.1.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582693487980" />
-    <state width="918" height="342" key="GridCell.Tab.1.right" timestamp="1582693487981">
+    <state width="1088" height="342" key="GridCell.Tab.1.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582712003488" />
+    <state width="1088" height="342" key="GridCell.Tab.1.right" timestamp="1582712003488">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582693487981" />
-    <state x="491" y="171" key="SettingsEditor" timestamp="1582688775063">
+    <state width="1088" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582712003488" />
+    <state x="491" y="171" key="SettingsEditor" timestamp="1582713094699">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582688775063" />
+    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582713094699" />
     <state width="512" height="509" key="XDebugger.FullValuePopup" timestamp="1582622230437">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -250,13 +283,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>89</line>
+          <line>101</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>109</line>
+          <line>121</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/EditUserTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

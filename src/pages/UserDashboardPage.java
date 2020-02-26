@@ -2,7 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class UserDashboardPage extends BasePage{
@@ -32,6 +37,10 @@ public class UserDashboardPage extends BasePage{
     private By successPopup = By.xpath("//div[@class='flash success text-center']");
     private By titleText = By.xpath("//a[@class='text-white']");
     private By validationError = By.xpath("//li[contains(text(),'Please complete all mandatory fields.')]");
+    private By idLabel = By.xpath("//th[@title='Click to Sort by Id']");
+    private By idData = By.xpath("//tr//td[2]");
+    private By userNameLabel = By.xpath("//th[contains(text(),'Username')]");
+    private By userNameData = By.xpath("//tr//td[3]");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -42,6 +51,9 @@ public class UserDashboardPage extends BasePage{
     static final String MEAL_SUITE = "MealSuite";
     static final String SYSTEM_ACOUNT = "System Account 1";
     String emailText;
+
+    //Store table data by collumn
+    private Map<WebElement, List<WebElement>> userTable;
     //*********Page Methods*********
     /**
      *  function below will  create new user
@@ -155,6 +167,22 @@ public class UserDashboardPage extends BasePage{
 
     public UserDashboardPage verifyAccountIsEmpty() {
         observesTextOnScreen(validationError);
+        return this;
+    }
+
+    public UserDashboardPage getUserTable() {
+        userTable = new HashMap<WebElement, List<WebElement>>();
+        userTable.put(getElement(idLabel),getElements(idData));
+        userTable.put(getElement(userNameLabel),getElements(userNameData));
+        for (int i = 0; i < 10 ; i++) {
+            for(Map.Entry<WebElement, List<WebElement>> a : userTable.entrySet()) {
+                WebElement key = a.getKey();
+                System.out.println(key.getText());
+                for(WebElement element : a.getValue()) {
+                    System.out.println(element.getText());
+                }
+            }
+        }
         return this;
     }
 }

@@ -65,7 +65,16 @@ public class BasePage {
     }
 
     // get list of element
+    public List<WebElement> getElements(By locator) {
+        List<WebElement> elements = driver.findElements(locator);
+        return elements;
+    }
 
+    //get single element
+    public WebElement getElement(By locator) {
+        WebElement element = driver.findElement(locator);
+        return element;
+    }
 
     //********Assertion***********
     public void assertEquals (By elementBy, String expectedText) {

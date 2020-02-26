@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class CreateNewAccountTest extends BaseTest {
 
     //create user with valid information
-    @Test
+    @Test (groups = {"CreateEditDeleteFlow"})
     public void createUserWithValidInformationTest() {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);

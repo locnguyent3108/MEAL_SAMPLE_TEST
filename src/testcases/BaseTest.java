@@ -1,5 +1,6 @@
 package testcases;
 
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -33,8 +34,11 @@ public class BaseTest {
 //      WebDriverManager.chromedriver().setup();
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 
-        //Create a Chrome driver. All test classes use this.
-        driver = new ChromeDriver();
+        //Create a Chrome driver.
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+
+        driver = new ChromeDriver(options);
         //instantiate javascript executor
         js = (JavascriptExecutor) driver;
         //Maximize Window
