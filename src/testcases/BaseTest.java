@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import utils.TestUtil;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +27,7 @@ public class BaseTest {
     public WebDriver driver;
     public JavascriptExecutor js;
 
-    @BeforeClass
+    @BeforeTest
     public void setup () {
         //Install chromeDriver
 //      WebDriverManager.chromedriver().setup();
@@ -45,7 +47,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
     }
 
-    @AfterClass
+    @AfterTest
     public void teardown () {
         driver.quit();
     }

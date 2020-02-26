@@ -31,7 +31,7 @@ public class BasePage {
     }
 
     public void waitForNextStep() {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
     }
 
     //select option in dropdown by text
@@ -72,7 +72,7 @@ public class BasePage {
         Assert.assertEquals(readText(elementBy), expectedText);
     }
 
-    public void assertExists (By locator, String expectedText){
+    public void observesElementOnScreen(By locator, String expectedText){
         Boolean result = false;
         List<WebElement> elements = driver.findElements(locator);
         for (WebElement element : elements) {
@@ -82,5 +82,10 @@ public class BasePage {
             }
         }
         Assert.assertTrue(result);
+    }
+
+    public void observesTextOnScreen(By elementBy) {
+        WebElement validateMessage = driver.findElement(elementBy);
+        Assert.assertTrue(validateMessage.isDisplayed());
     }
 }

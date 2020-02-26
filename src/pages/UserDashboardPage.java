@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.TestUtil;
 
 
 public class UserDashboardPage extends BasePage{
@@ -32,7 +31,7 @@ public class UserDashboardPage extends BasePage{
     private By closeButtonBy = By.xpath("//div[@id='modal-content']//button[@class='close']");
     private By successPopup = By.xpath("//div[@class='flash success text-center']");
     private By titleText = By.xpath("//a[@class='text-white']");
-
+    private By validationError = By.xpath("//li[contains(text(),'Please complete all mandatory fields.')]");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -129,6 +128,14 @@ public class UserDashboardPage extends BasePage{
         click(saveButtonBy);
         loading(successPopup);
         click(closeButtonBy);
+        waitForNextStep();
+        return this;
+    }
+
+    //click save button
+    public UserDashboardPage clickSave() {
+        click(saveButtonBy);
+        waitForNextStep();
         return this;
     }
 
@@ -142,7 +149,12 @@ public class UserDashboardPage extends BasePage{
     //*********Verify methods*********
     public UserDashboardPage verifyAccountCreateSuccess() {
 
-        assertExists(userTableBy, emailText);
+        observesElementOnScreen(userTableBy, emailText);
+        return this;
+    }
+
+    public UserDashboardPage verifyAccountIsEmpty() {
+        observesTextOnScreen(validationError);
         return this;
     }
 }

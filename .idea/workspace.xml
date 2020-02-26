@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/DeleteUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/TestUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateNewAccountTest.createUserWithValidInformationTest">
+  <component name="RunManager" selected="TestNG.CreateNewAccountTest.createUserWithEmptyAllField">
     <configuration name="CreateNewAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -90,6 +87,24 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.CreateNewAccountTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewAccountTest.createUserWithEmptyAllField" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.CreateNewAccountTest" />
+      <option name="METHOD_NAME" value="createUserWithEmptyAllField" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -134,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateNewAccountTest.createUserWithEmptyAllField" />
         <item itemvalue="TestNG.CreateNewAccountTest.createUserWithValidInformationTest" />
         <item itemvalue="TestNG.CreateNewAccountTest" />
         <item itemvalue="TestNG.temp.test" />
@@ -153,7 +169,7 @@
       <workItem from="1582605361831" duration="249000" />
       <workItem from="1582605886855" duration="117000" />
       <workItem from="1582606245922" duration="682000" />
-      <workItem from="1582687639323" duration="5713000" />
+      <workItem from="1582687639323" duration="9645000" />
     </task>
     <servers />
   </component>
@@ -172,22 +188,22 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620924880" />
-    <state width="918" height="277" key="GridCell.Tab.0.bottom" timestamp="1582693503010">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom" timestamp="1582703652225">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582693503010" />
-    <state width="918" height="277" key="GridCell.Tab.0.center" timestamp="1582693503009">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652225" />
+    <state width="1088" height="277" key="GridCell.Tab.0.center" timestamp="1582703652220">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582693503009" />
-    <state width="918" height="277" key="GridCell.Tab.0.left" timestamp="1582693503009">
+    <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652220" />
+    <state width="1088" height="277" key="GridCell.Tab.0.left" timestamp="1582703652219">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582693503009" />
-    <state width="918" height="277" key="GridCell.Tab.0.right" timestamp="1582693503009">
+    <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652219" />
+    <state width="1088" height="277" key="GridCell.Tab.0.right" timestamp="1582703652222">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="918" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582693503009" />
+    <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582703652222" />
     <state width="918" height="342" key="GridCell.Tab.1.bottom" timestamp="1582693487981">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -234,12 +250,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>90</line>
+          <line>89</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>110</line>
+          <line>109</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

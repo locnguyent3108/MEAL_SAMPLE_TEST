@@ -28,6 +28,19 @@ public class CreateNewAccountTest extends BaseTest {
     //create with empty value
     @Test
     public void createUserWithEmptyAllField() {
+        LoginPage loginPage = new LoginPage(driver);
+        DashboardPage dashBoardPage = new DashboardPage(driver);
+        loginPage.goToLoginPage()
+                .loginWithDefaultAccount();
+
+        dashBoardPage.navigateUserDashboard()
+                .addNewUser()
+                .clickSave()
+        .verifyAccountIsEmpty();
+    }
+
+    @Test
+    public void createUserWithInvalidInformation() {
 
     }
 }
