@@ -56,7 +56,7 @@ public class LoginPage extends BasePage {
      * login with default credential
      */
     public DashboardPage loginWithDefaultAccount() {
-        setUserName("FullAcDataB-Super");
+        setUserName("FullAcFac-Super");
         setPassword("Password123!");
         click(loginButtonBy);
         return new DashboardPage(wait, driver);

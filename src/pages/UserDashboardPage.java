@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.TestUtil;
 
 
 public class UserDashboardPage extends BasePage{
@@ -30,6 +31,8 @@ public class UserDashboardPage extends BasePage{
     private By userTableBy = By.xpath("//tbody[@class='user-table-body']//a");
     private By closeButtonBy = By.xpath("//div[@id='modal-content']//button[@class='close']");
     private By successPopup = By.xpath("//div[@class='flash success text-center']");
+    private By titleText = By.xpath("//a[@class='text-white']");
+
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -49,6 +52,11 @@ public class UserDashboardPage extends BasePage{
     //click add new button
     public UserDashboardPage addNewUser() {
         click(addUserButton);
+        loading(titleText);
+        click(closeButtonBy);
+        waitForNextStep();
+        click(addUserButton);
+
         return this;
     }
 
@@ -61,11 +69,13 @@ public class UserDashboardPage extends BasePage{
     //give text for first name
     public UserDashboardPage setFirstName( String firstName) {
         writeText(firstNameFieldBy, firstName);
+        waitForNextStep();
         return this;
     }
 
     public UserDashboardPage setLastName(String lastName) {
         writeText(lastnameFieldBy, lastName);
+        waitForNextStep();
         return this;
     }
 
@@ -83,6 +93,7 @@ public class UserDashboardPage extends BasePage{
         } else {
             selectOption(languageDropdownField,FR);
         }
+        waitForNextStep();
         return this;
     }
 
@@ -90,6 +101,7 @@ public class UserDashboardPage extends BasePage{
     public UserDashboardPage setEmail(String emailTextInput) {
         emailText = emailTextInput;
         writeText(emailFieldBy, emailText);
+        waitForNextStep();
         return this;
     }
 

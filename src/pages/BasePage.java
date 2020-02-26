@@ -7,34 +7,31 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import static utils.TestUtil.IMPLICIT_WAIT_TIMEOUT;
 
 public class BasePage {
     public WebDriver driver;
     public String url = "http://qa.rebuild.mealsuite.com";
 
     public WebDriverWait wait;
-
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
     public BasePage(WebDriverWait wait, WebDriver driver) {
-        this.wait = wait;
         this.driver = driver;
+        this.wait =  new WebDriverWait(driver, IMPLICIT_WAIT_TIMEOUT);
     }
 
     //Wait Wrapper Method
     public void loading(By locator) {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public void waitForNextStep() {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     //select option in dropdown by text
@@ -86,6 +83,4 @@ public class BasePage {
         }
         Assert.assertTrue(result);
     }
-
-
 }
