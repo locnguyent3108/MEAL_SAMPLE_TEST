@@ -48,10 +48,11 @@ public class UserDashboardPage extends BasePage{
     private By lastNameData = By.xpath("//tr//td[5]");
     private By deleteButton = By.xpath("//div[@class='btn btn-red']");
     private By deleteButtonPopUp = By.xpath("//button[@class='btn btn-confirm btn-confirm-delete-ok']");
+    private By countUserText = By.xpath("//span[@class='model-count']");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
-
+    String totalUser;
     //System text variables
     static final String THS = "THS";
     static final String UNIDINE = "Unidine";
@@ -62,11 +63,6 @@ public class UserDashboardPage extends BasePage{
     //Store table data by collumn
     private Map<WebElement, List<WebElement>> userTable;
     //*********Page Methods*********
-    /**
-     *  function below will  create new user
-     *  this user display on top of the user dashboard
-     * @return user dashboard page instance
-     */
     //click add new button
     public UserDashboardPage addNewUser() {
         click(addUserButton);
@@ -77,6 +73,7 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
 
+    //Click close button inside Addnew section
     public UserDashboardPage clickClose() {
         click(closeButtonBy);
         waitForNextStep();
@@ -97,6 +94,7 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
 
+    //give text for last name
     public UserDashboardPage setLastName(String lastName) {
         writeText(lastnameFieldBy, lastName);
         hardWait();
@@ -172,21 +170,25 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
 
+    //get list user by username in user dashboard
     public List<WebElement> getListUserName() {
         List<WebElement> listUserName = getElements(userNameData);
         return listUserName;
     }
 
+    //get list first name of user by firstName in user dashboard
     public List<WebElement> getListFirstName() {
         List<WebElement> listFirstName = getElements(firstNameData);
         return listFirstName;
     }
 
+    //get list last name of user by lastname in user dashboard
     public List<WebElement> getListLastName() {
         List<WebElement> listLastName = getElements(lastNameData);
         return listLastName;
     }
 
+    //select on top user and click on it
     public UserDashboardPage selectFirstUser() {
         hardWait();
         List<WebElement> listUser = getListUserName();
@@ -194,12 +196,20 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
 
+    //delete account by using delete button in Add new section
     public UserDashboardPage deleteAccount() {
         hardWait();
         click(deleteButton);
         waitElementReady(deleteButtonPopUp);
         click(deleteButtonPopUp);
         return this;
+    }
+
+    //
+    public String getCountingUsers() {
+        WebElement countUser = getElement(countUserText);
+        totalUser = countUser.getText();
+        return totalUser;
     }
     //*********Verify methods*********
     public UserDashboardPage isAccountCreateSuccess() {
@@ -245,9 +255,13 @@ public class UserDashboardPage extends BasePage{
     }
 
     public void isAccountDeleted() {
-
+        String totalUserAfterDelete = getCountingUsers();
         WebElement alertText = getElement(successPopup);
         String alertTextRaw = alertText.getAttribute("innerHTML");
         Assert.assertTrue(alertTextRaw.contains("User was deleted successfully"));
+        hardWait();
+        if(!totalUserAfterDelete.equals(totalUser)){
+            Assert.assertTrue(true);
+        }
     }
 }

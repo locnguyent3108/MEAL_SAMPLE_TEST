@@ -4,8 +4,7 @@ import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
 
-public class DeleteUserTest  extends BaseTest{
-
+public class DeleteUserInUserList extends BaseTest {
     @Test
     public void deleteUserInForm() {
         String userDeleted = "test";
@@ -15,10 +14,9 @@ public class DeleteUserTest  extends BaseTest{
                 .loginWithDefaultAccount();
 
         dashBoardPage.navigateUserDashboard()
-                     .searchUser(userDeleted)
-                     .selectFirstUser()
-                     .deleteAccount()
-        .isAccountDeleted();
+                .searchUser(userDeleted)
+                .selectFirstUser()
+                .deleteAccount()
+                .isAccountDeleted();
     }
-
 }

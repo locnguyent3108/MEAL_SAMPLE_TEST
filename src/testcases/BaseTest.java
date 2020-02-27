@@ -34,7 +34,9 @@ public class BaseTest {
     @BeforeTest
     public void setup () {
         //Install chromeDriver
-      WebDriverManager.chromedriver().version("72.0").setup();
+//      WebDriverManager.chromedriver().version("72.0").setup();
+      WebDriverManager.firefoxdriver().version("73.0").setup();
+
 //        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 
         //Create a Chrome driver.
@@ -42,7 +44,8 @@ public class BaseTest {
         options.addArguments("--incognito");
         options.addArguments("--disable-gpu");
 
-        driver = new ChromeDriver(options);
+//        driver = new ChromeDriver(options);
+        driver = new FirefoxDriver();
         //instantiate javascript executor
         js = (JavascriptExecutor) driver;
         //clean up
