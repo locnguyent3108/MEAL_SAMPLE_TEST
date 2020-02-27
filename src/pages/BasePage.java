@@ -31,7 +31,7 @@ public class BasePage {
     }
 
     public void waitForNextStep() {
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     }
 
     //select option in dropdown by text
@@ -49,8 +49,13 @@ public class BasePage {
         driver.findElement(elementBy).click();
     }
 
+    public void click (WebElement element) {
+        element.click();
+    }
+
     public void writeText (By elementBy, String text) {
         WebElement textBox = driver.findElement(elementBy);
+        textBox.clear();
         textBox.sendKeys(text);
 
     }
@@ -96,5 +101,9 @@ public class BasePage {
     public void observesTextOnScreen(By elementBy) {
         WebElement validateMessage = driver.findElement(elementBy);
         Assert.assertTrue(validateMessage.isDisplayed());
+    }
+
+    public void refresh() {
+        driver.navigate().refresh();
     }
 }

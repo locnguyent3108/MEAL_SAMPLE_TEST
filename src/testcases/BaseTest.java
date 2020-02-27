@@ -1,6 +1,8 @@
 package testcases;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -31,19 +33,16 @@ public class BaseTest {
     @BeforeTest
     public void setup () {
         //Install chromeDriver
-//      WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+      WebDriverManager.chromedriver().version("72.0").setup();
+//        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 
         //Create a Chrome driver.
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         //instantiate javascript executor
         js = (JavascriptExecutor) driver;
-        //Maximize Window
-        driver.manage().window().maximize();
-
         //clean up
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();

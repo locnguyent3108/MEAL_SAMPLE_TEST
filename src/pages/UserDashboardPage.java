@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.HashMap;
 import java.util.List;
@@ -41,6 +42,11 @@ public class UserDashboardPage extends BasePage{
     private By idData = By.xpath("//tr//td[2]");
     private By userNameLabel = By.xpath("//th[contains(text(),'Username')]");
     private By userNameData = By.xpath("//tr//td[3]");
+    private By firstNameLabel = By.xpath("//th[contains(text(),'First Name')]");
+    private By firstNameData = By.xpath("//tr//td[4]");
+    private By lastNameLabel = By.xpath("//th[@data-field-name = 'last_name']");
+    private By lastNameData = By.xpath("//tr//td[5]");
+
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -64,10 +70,15 @@ public class UserDashboardPage extends BasePage{
     public UserDashboardPage addNewUser() {
         click(addUserButton);
         loading(titleText);
+        clickClose();
+        waitForNextStep();
+        clickClose();
+        return this;
+    }
+
+    public UserDashboardPage clickClose() {
         click(closeButtonBy);
         waitForNextStep();
-        click(addUserButton);
-
         return this;
     }
 
@@ -138,7 +149,7 @@ public class UserDashboardPage extends BasePage{
     //submit register form
     public UserDashboardPage submitForm()  {
         click(saveButtonBy);
-        loading(successPopup);
+        waitForNextStep();
         click(closeButtonBy);
         waitForNextStep();
         return this;
@@ -166,23 +177,61 @@ public class UserDashboardPage extends BasePage{
     }
 
     public UserDashboardPage verifyAccountIsEmpty() {
+        waitForNextStep();
         observesTextOnScreen(validationError);
         return this;
     }
 
-    public UserDashboardPage getUserTable() {
-        userTable = new HashMap<WebElement, List<WebElement>>();
-        userTable.put(getElement(idLabel),getElements(idData));
-        userTable.put(getElement(userNameLabel),getElements(userNameData));
-        for (int i = 0; i < 10 ; i++) {
-            for(Map.Entry<WebElement, List<WebElement>> a : userTable.entrySet()) {
-                WebElement key = a.getKey();
-                System.out.println(key.getText());
-                for(WebElement element : a.getValue()) {
-                    System.out.println(element.getText());
-                }
-            }
-        }
+    //TODO
+//    public UserDashboardPage getUserTable() {
+//        userTable = new HashMap<WebElement, List<WebElement>>();
+//        userTable.put(getElement(idLabel),getElements(idData));
+//        userTable.put(getElement(userNameLabel),getElements(userNameData));
+//        Map.Entry<WebElement, List<WebElement>> entry = userTable.entrySet().iterator().next();
+//        List = entry.getKey();
+//        for (int i = 0; i < 10 ; i++) {
+//            for(Map.Entry<WebElement, List<WebElement>> a : userTable.entrySet()) {
+//                WebElement key = a.getKey();
+//                System.out.println(key.getText());
+//                for(WebElement element : a.getValue()) {
+//                    System.out.println(element.getText());
+//                }
+//            }
+//        }
+//
+//        return userTable;
+//    }
+
+    public List<WebElement> getListUserName() {
+        List<WebElement> listUserName = getElements(userNameData);
+        return listUserName;
+    }
+
+    public List<WebElement> getListFirstName() {
+        List<WebElement> listFirstName = getElements(firstNameData);
+        return listFirstName;
+    }
+
+    public List<WebElement> getListLastName() {
+        List<WebElement> listLastName = getElements(lastNameData);
+        return listLastName;
+    }
+
+    public UserDashboardPage selectFirstUserName() {
+        List<WebElement> listUser = getListUserName();
+        click(listUser.get(0));
+        waitForNextStep();
         return this;
+    }
+
+    public void isFirstLastNameUpdated(String expectedFirstName, String expectedLastName) {
+        refresh();
+        waitForNextStep();
+        List<WebElement> listFirstName = getListFirstName();
+        String updatedFirstName = listFirstName.get(0).getText();
+        List<WebElement> listLastName = getListLastName();
+        String updatedLastName = listLastName.get(0).getText();
+        Assert.assertEquals(updatedFirstName, expectedFirstName);
+        Assert.assertEquals(updatedLastName, expectedLastName);
     }
 }
