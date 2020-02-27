@@ -17,7 +17,7 @@ public class EditUserTest extends BaseTest{
                 .loginWithDefaultAccount();
 
         dashBoardPage.navigateUserDashboard()
-                .selectFirstUserName()
+                .selectFirstUser()
                 .setFirstName(newFirstName)
                 .setLastName(newLastName)
                 .submitForm()

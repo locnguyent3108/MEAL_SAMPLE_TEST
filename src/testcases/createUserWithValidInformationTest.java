@@ -15,6 +15,6 @@ public class createUserWithValidInformationTest extends BaseTest {
         dashBoardPage.navigateUserDashboard()
                 .addNewUser()
                 .clickSave()
-                .verifyAccountIsEmpty();
+                .isAccountEmpty();
     }
 }

@@ -4,8 +4,6 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import org.testng.annotations.Test;
 
-import static org.testng.TestRunner.PriorityWeight.priority;
-
 public class CreateNewAccountSuccessTest extends BaseTest {
 
     //create user with valid information
@@ -25,6 +23,6 @@ public class CreateNewAccountSuccessTest extends BaseTest {
                 .selectLanguage("French")
                 .selectSystem("THS")
                 .submitForm()
-        .verifyAccountCreateSuccess();
+        .isAccountCreateSuccess();
     }
 }

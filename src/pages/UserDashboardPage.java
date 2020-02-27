@@ -41,12 +41,13 @@ public class UserDashboardPage extends BasePage{
     private By idLabel = By.xpath("//th[@title='Click to Sort by Id']");
     private By idData = By.xpath("//tr//td[2]");
     private By userNameLabel = By.xpath("//th[contains(text(),'Username')]");
-    private By userNameData = By.xpath("//tr//td[3]");
+    private By userNameData = By.xpath("//tr//td[3]/a");
     private By firstNameLabel = By.xpath("//th[contains(text(),'First Name')]");
     private By firstNameData = By.xpath("//tr//td[4]");
     private By lastNameLabel = By.xpath("//th[@data-field-name = 'last_name']");
     private By lastNameData = By.xpath("//tr//td[5]");
-
+    private By deleteButton = By.xpath("//div[@class='btn btn-red']");
+    private By deleteButtonPopUp = By.xpath("//button[@class='btn btn-confirm btn-confirm-delete-ok']");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -112,12 +113,12 @@ public class UserDashboardPage extends BasePage{
     //multiple select language: english - french
     // here is multiple dropdown, this function just for single select, fix later
     public UserDashboardPage selectLanguage(String languageSelect) {
+        hardWait();
         if (languageSelect.equals(EN)) {
             selectOption(languageDropdownField,EN);
         } else {
             selectOption(languageDropdownField,FR);
         }
-        waitForNextStep();
         return this;
     }
 
@@ -171,14 +172,42 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
 
-    //*********Verify methods*********
-    public UserDashboardPage verifyAccountCreateSuccess() {
+    public List<WebElement> getListUserName() {
+        List<WebElement> listUserName = getElements(userNameData);
+        return listUserName;
+    }
 
+    public List<WebElement> getListFirstName() {
+        List<WebElement> listFirstName = getElements(firstNameData);
+        return listFirstName;
+    }
+
+    public List<WebElement> getListLastName() {
+        List<WebElement> listLastName = getElements(lastNameData);
+        return listLastName;
+    }
+
+    public UserDashboardPage selectFirstUser() {
+        hardWait();
+        List<WebElement> listUser = getListUserName();
+        click(listUser.get(0));
+        return this;
+    }
+
+    public UserDashboardPage deleteAccount() {
+        hardWait();
+        click(deleteButton);
+        waitElementReady(deleteButtonPopUp);
+        click(deleteButtonPopUp);
+        return this;
+    }
+    //*********Verify methods*********
+    public UserDashboardPage isAccountCreateSuccess() {
         observesElementOnScreen(userTableBy, emailText);
         return this;
     }
 
-    public UserDashboardPage verifyAccountIsEmpty() {
+    public UserDashboardPage isAccountEmpty() {
         waitForNextStep();
         observesTextOnScreen(validationError);
         return this;
@@ -204,28 +233,6 @@ public class UserDashboardPage extends BasePage{
 //        return userTable;
 //    }
 
-    public List<WebElement> getListUserName() {
-        List<WebElement> listUserName = getElements(userNameData);
-        return listUserName;
-    }
-
-    public List<WebElement> getListFirstName() {
-        List<WebElement> listFirstName = getElements(firstNameData);
-        return listFirstName;
-    }
-
-    public List<WebElement> getListLastName() {
-        List<WebElement> listLastName = getElements(lastNameData);
-        return listLastName;
-    }
-
-    public UserDashboardPage selectFirstUserName() {
-        List<WebElement> listUser = getListUserName();
-        click(listUser.get(0));
-        waitForNextStep();
-        return this;
-    }
-
     public void isFirstLastNameUpdated(String expectedFirstName, String expectedLastName) {
         refresh();
         waitForNextStep();
@@ -235,5 +242,12 @@ public class UserDashboardPage extends BasePage{
         String updatedLastName = listLastName.get(0).getText();
         Assert.assertEquals(updatedFirstName, expectedFirstName);
         Assert.assertEquals(updatedLastName, expectedLastName);
+    }
+
+    public void isAccountDeleted() {
+
+        WebElement alertText = getElement(successPopup);
+        String alertTextRaw = alertText.getAttribute("innerHTML");
+        Assert.assertTrue(alertTextRaw.contains("User was deleted successfully"));
     }
 }

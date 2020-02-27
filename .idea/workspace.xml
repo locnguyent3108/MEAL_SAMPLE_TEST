@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testcases/createUserWithValidInformationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/CreateNewAccountSuccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/DeleteUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/DeleteUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/EditUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/createUserWithValidInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserWithValidInformationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/CreateNewAccountTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/DeleteUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/DeleteUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateNewAccountSuccessTest">
+  <component name="RunManager" selected="TestNG.DeleteUserTest.deleteUserInForm">
     <configuration name="CreateNewAccountSuccessTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -128,6 +128,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeleteUserTest.deleteUserInForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserTest" />
+      <option name="METHOD_NAME" value="deleteUserInForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EditUserTest.editUserWithNewInformation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -146,31 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="temp.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.temp" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateNewAccountSuccessTest" />
-        <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithValidInformationTest" />
+        <item itemvalue="TestNG.DeleteUserTest.deleteUserInForm" />
         <item itemvalue="TestNG.EditUserTest.editUserWithNewInformation" />
+        <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithValidInformationTest" />
+        <item itemvalue="TestNG.CreateNewAccountSuccessTest" />
         <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithEmptyAllField" />
-        <item itemvalue="TestNG.temp.test" />
       </list>
     </recent_temporary>
   </component>
@@ -214,38 +214,38 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620924880" />
-    <state width="1088" height="277" key="GridCell.Tab.0.bottom" timestamp="1582782924583">
+    <state width="1088" height="342" key="GridCell.Tab.0.bottom" timestamp="1582789908097">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582782924583" />
-    <state width="1088" height="277" key="GridCell.Tab.0.center" timestamp="1582782924583">
+    <state width="1088" height="342" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582789908097" />
+    <state width="1088" height="342" key="GridCell.Tab.0.center" timestamp="1582789908096">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582782924583" />
-    <state width="1088" height="277" key="GridCell.Tab.0.left" timestamp="1582782924582">
+    <state width="1088" height="342" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582789908096" />
+    <state width="1088" height="342" key="GridCell.Tab.0.left" timestamp="1582789908096">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582782924582" />
-    <state width="1088" height="277" key="GridCell.Tab.0.right" timestamp="1582782924583">
+    <state width="1088" height="342" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582789908096" />
+    <state width="1088" height="342" key="GridCell.Tab.0.right" timestamp="1582789908096">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582782924583" />
-    <state width="1088" height="342" key="GridCell.Tab.1.bottom" timestamp="1582782611615">
+    <state width="1088" height="342" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582789908096" />
+    <state width="1088" height="342" key="GridCell.Tab.1.bottom" timestamp="1582789891810">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582782611615" />
-    <state width="1088" height="342" key="GridCell.Tab.1.center" timestamp="1582782611615">
+    <state width="1088" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582789891810" />
+    <state width="1088" height="342" key="GridCell.Tab.1.center" timestamp="1582789891810">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.1.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582782611615" />
-    <state width="1088" height="342" key="GridCell.Tab.1.left" timestamp="1582782611614">
+    <state width="1088" height="342" key="GridCell.Tab.1.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582789891810" />
+    <state width="1088" height="342" key="GridCell.Tab.1.left" timestamp="1582789891809">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.1.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582782611614" />
-    <state width="1088" height="342" key="GridCell.Tab.1.right" timestamp="1582782611615">
+    <state width="1088" height="342" key="GridCell.Tab.1.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582789891809" />
+    <state width="1088" height="342" key="GridCell.Tab.1.right" timestamp="1582789891810">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582782611615" />
+    <state width="1088" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582789891810" />
     <state x="491" y="171" key="SettingsEditor" timestamp="1582713094699">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -275,11 +275,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>222</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/testcases/EditUserTest.java</url>
           <line>23</line>
           <option name="timeStamp" value="33" />
@@ -290,14 +285,19 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>176</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/testcases/CreateNewAccountTest.java</url>
+          <url>file://$PROJECT_DIR$/src/testcases/CreateNewAccountSuccessTest.java</url>
           <line>27</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/DeleteUserTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
+          <line>250</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
