@@ -69,10 +69,10 @@ public class UserDashboardPage extends BasePage{
     //click add new button
     public UserDashboardPage addNewUser() {
         click(addUserButton);
-        loading(titleText);
+        hardWait();
         clickClose();
-        waitForNextStep();
-        clickClose();
+        hardWait();
+        click(addUserButton);
         return this;
     }
 
@@ -90,19 +90,21 @@ public class UserDashboardPage extends BasePage{
 
     //give text for first name
     public UserDashboardPage setFirstName( String firstName) {
+        waitElementReady(firstNameFieldBy);
         writeText(firstNameFieldBy, firstName);
-        waitForNextStep();
+
         return this;
     }
 
     public UserDashboardPage setLastName(String lastName) {
         writeText(lastnameFieldBy, lastName);
-        waitForNextStep();
+        hardWait();
         return this;
     }
 
     //give text for username
     public UserDashboardPage setUserName(String usernameText) {
+        cleanText(usernameFieldBy);
         writeText(usernameFieldBy, usernameText);
         return this;
     }
@@ -123,7 +125,7 @@ public class UserDashboardPage extends BasePage{
     public UserDashboardPage setEmail(String emailTextInput) {
         emailText = emailTextInput;
         writeText(emailFieldBy, emailText);
-        waitForNextStep();
+        hardWait();
         return this;
     }
 
@@ -151,7 +153,7 @@ public class UserDashboardPage extends BasePage{
         click(saveButtonBy);
         waitForNextStep();
         click(closeButtonBy);
-        waitForNextStep();
+        hardWait();
         return this;
     }
 

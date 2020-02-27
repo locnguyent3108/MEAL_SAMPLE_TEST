@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import utils.TestUtil;
@@ -39,19 +40,20 @@ public class BaseTest {
         //Create a Chrome driver.
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
+        options.addArguments("--disable-gpu");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         //instantiate javascript executor
         js = (JavascriptExecutor) driver;
         //clean up
         driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
     }
 
     @AfterTest
     public void teardown () {
+        driver.manage().deleteAllCookies();
         driver.quit();
     }
 

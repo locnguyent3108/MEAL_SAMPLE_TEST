@@ -4,11 +4,14 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import org.testng.annotations.Test;
 
-public class CreateNewAccountTest extends BaseTest {
+import static org.testng.TestRunner.PriorityWeight.priority;
+
+public class CreateNewAccountSuccessTest extends BaseTest {
 
     //create user with valid information
-    @Test (groups = {"CreateEditDeleteFlow"})
+    @Test
     public void createUserWithValidInformationTest() {
+        String email = randomEmail();
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
@@ -18,29 +21,10 @@ public class CreateNewAccountTest extends BaseTest {
                 .addNewUser()
                 .setFirstName("test")
                 .setLastName("MealSuite")
-                .setEmail(randomEmail())
+                .setEmail(email)
                 .selectLanguage("French")
                 .selectSystem("THS")
                 .submitForm()
         .verifyAccountCreateSuccess();
-    }
-
-    //create with empty value
-    @Test
-    public void createUserWithEmptyAllField() {
-        LoginPage loginPage = new LoginPage(driver);
-        DashboardPage dashBoardPage = new DashboardPage(driver);
-        loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
-
-        dashBoardPage.navigateUserDashboard()
-                .addNewUser()
-                .clickSave()
-        .verifyAccountIsEmpty();
-    }
-
-    @Test
-    public void createUserWithInvalidInformation() {
-
     }
 }

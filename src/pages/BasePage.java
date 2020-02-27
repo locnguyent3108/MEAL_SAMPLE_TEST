@@ -22,7 +22,7 @@ public class BasePage {
 
     public BasePage(WebDriverWait wait, WebDriver driver) {
         this.driver = driver;
-        this.wait =  new WebDriverWait(driver, IMPLICIT_WAIT_TIMEOUT);
+        this.wait =  wait;
     }
 
     //Wait Wrapper Method
@@ -32,6 +32,15 @@ public class BasePage {
 
     public void waitForNextStep() {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    }
+
+    public void hardWait() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            System.out.println("corrupted timeout");
+        }
+
     }
 
     //select option in dropdown by text
@@ -55,9 +64,13 @@ public class BasePage {
 
     public void writeText (By elementBy, String text) {
         WebElement textBox = driver.findElement(elementBy);
-        textBox.clear();
+        hardWait();
         textBox.sendKeys(text);
+    }
 
+    public void cleanText (By elementBy) {
+        WebElement textBox = driver.findElement(elementBy);
+        textBox.clear();
     }
 
     //Read Text
@@ -105,5 +118,10 @@ public class BasePage {
 
     public void refresh() {
         driver.navigate().refresh();
+    }
+
+    public void waitElementReady(By locator) {
+        wait = new WebDriverWait(driver,IMPLICIT_WAIT_TIMEOUT);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }
