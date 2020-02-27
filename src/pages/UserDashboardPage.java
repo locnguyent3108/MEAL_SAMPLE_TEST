@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +15,6 @@ public class UserDashboardPage extends BasePage{
     public UserDashboardPage(WebDriver driver) {
         super(driver);
     }
-
     public UserDashboardPage(WebDriverWait wait, WebDriver driver) {
         super(wait, driver);
     }
@@ -46,9 +44,10 @@ public class UserDashboardPage extends BasePage{
     private By firstNameData = By.xpath("//tr//td[4]");
     private By lastNameLabel = By.xpath("//th[@data-field-name = 'last_name']");
     private By lastNameData = By.xpath("//tr//td[5]");
-    private By deleteButton = By.xpath("//div[@class='btn btn-red']");
+    private By deleteButtonInForm = By.xpath("//div[@class='btn btn-red']");
     private By deleteButtonPopUp = By.xpath("//button[@class='btn btn-confirm btn-confirm-delete-ok']");
     private By countUserText = By.xpath("//span[@class='model-count']");
+    private By deleteButton = By.xpath("//i[@class='fas fa-times-circle']");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -199,12 +198,20 @@ public class UserDashboardPage extends BasePage{
     //delete account by using delete button in Add new section
     public UserDashboardPage deleteAccount() {
         hardWait();
-        click(deleteButton);
+        click(deleteButtonInForm);
         waitElementReady(deleteButtonPopUp);
         click(deleteButtonPopUp);
         return this;
     }
 
+    //delete account by using delete button in user list
+    public UserDashboardPage deleteAccountInUserList() {
+        List<WebElement> deleteButtons = getElements(deleteButton);
+        click(deleteButtons.get(0));
+        waitElementReady(deleteButtonPopUp);
+        click(deleteButtonPopUp);
+        return this;
+    }
     //
     public String getCountingUsers() {
         WebElement countUser = getElement(countUserText);
@@ -262,6 +269,8 @@ public class UserDashboardPage extends BasePage{
         hardWait();
         if(!totalUserAfterDelete.equals(totalUser)){
             Assert.assertTrue(true);
+        } else{
+            Assert.assertTrue(false);
         }
     }
 }

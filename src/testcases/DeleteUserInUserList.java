@@ -14,9 +14,7 @@ public class DeleteUserInUserList extends BaseTest {
                 .loginWithDefaultAccount();
 
         dashBoardPage.navigateUserDashboard()
-                .searchUser(userDeleted)
-                .selectFirstUser()
-                .deleteAccount()
-                .isAccountDeleted();
+                .deleteAccountInUserList()
+        .isAccountDeleted();
     }
 }

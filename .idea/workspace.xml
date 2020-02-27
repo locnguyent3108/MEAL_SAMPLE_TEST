@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testcases/DeleteUserInUserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/DeleteUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/DeleteUserInFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/DeleteUserInUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/DeleteUserInUserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/DeleteUserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/DeleteUserInUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/DeleteUserInUserList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,31 +62,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteUserInFormTest.deleteUserInForm">
-    <configuration name="CreateNewAccountSuccessTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.CreateNewAccountSuccessTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.DeleteUserInUserList.deleteUserInForm">
     <configuration name="CreateNewAccountSuccessTest.createUserWithValidInformationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -143,6 +123,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeleteUserInUserList.deleteUserInForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserInUserList" />
+      <option name="METHOD_NAME" value="deleteUserInForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EditUserTest.editUserWithNewInformation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -163,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DeleteUserInUserList.deleteUserInForm" />
         <item itemvalue="TestNG.DeleteUserInFormTest.deleteUserInForm" />
         <item itemvalue="TestNG.DeleteUserInFormTest" />
         <item itemvalue="TestNG.EditUserTest.editUserWithNewInformation" />
         <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithValidInformationTest" />
-        <item itemvalue="TestNG.CreateNewAccountSuccessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +183,7 @@
       <workItem from="1582605886855" duration="117000" />
       <workItem from="1582606245922" duration="682000" />
       <workItem from="1582687639323" duration="17210000" />
+      <workItem from="1582792669062" duration="1242000" />
     </task>
     <servers />
   </component>
@@ -211,22 +210,22 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="254" y="301" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620924880" />
-    <state width="1088" height="342" key="GridCell.Tab.0.bottom" timestamp="1582792427718">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom" timestamp="1582793906718">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582792427718" />
-    <state width="1088" height="342" key="GridCell.Tab.0.center" timestamp="1582792427717">
+    <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906718" />
+    <state width="1088" height="277" key="GridCell.Tab.0.center" timestamp="1582793906711">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582792427717" />
-    <state width="1088" height="342" key="GridCell.Tab.0.left" timestamp="1582792427717">
+    <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906711" />
+    <state width="1088" height="277" key="GridCell.Tab.0.left" timestamp="1582793906710">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582792427717" />
-    <state width="1088" height="342" key="GridCell.Tab.0.right" timestamp="1582792427718">
+    <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906710" />
+    <state width="1088" height="277" key="GridCell.Tab.0.right" timestamp="1582793906717">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state width="1088" height="342" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582792427718" />
+    <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906717" />
     <state width="1088" height="342" key="GridCell.Tab.1.bottom" timestamp="1582792410210">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -243,18 +242,18 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1088" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582792410210" />
-    <state x="491" y="171" key="SettingsEditor" timestamp="1582713094699">
+    <state x="981" y="161" key="SettingsEditor" timestamp="1582792647082">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state x="491" y="171" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582713094699" />
+    <state x="981" y="161" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582792647082" />
     <state width="512" height="509" key="XDebugger.FullValuePopup" timestamp="1582622230437">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="512" height="509" key="XDebugger.FullValuePopup/0.23.1920.1018@0.23.1920.1018" timestamp="1582622230437" />
-    <state x="598" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1582687653653">
+    <state x="598" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1582792710148">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
-    <state x="598" y="364" key="com.intellij.ide.util.TipDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582687653653" />
+    <state x="598" y="364" key="com.intellij.ide.util.TipDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582792710148" />
     <state x="1081" y="157" width="717" height="750" key="find.popup" timestamp="1582689947732">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -290,11 +289,6 @@
           <url>file://$PROJECT_DIR$/src/testcases/DeleteUserInFormTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pages/UserDashboardPage.java</url>
-          <line>202</line>
-          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
