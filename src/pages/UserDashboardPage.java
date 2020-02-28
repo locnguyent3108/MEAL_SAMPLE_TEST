@@ -129,19 +129,14 @@ public class UserDashboardPage extends BasePage{
 
     //multiple select system: THS - Unidine - MealSuite - System Account
     public UserDashboardPage selectSystem(String systemSelect) {
-        switch (systemSelect) {
-            case "THS":
-                selectOption(systemDropdownField,THS);
-                break;
-            case "Unidine":
-                selectOption(systemDropdownField,UNIDINE);
-                break;
-            case "MealSuite":
-                selectOption(systemDropdownField,MEAL_SUITE);
-                break;
-            case "System Account 1":
-                selectOption(systemDropdownField,SYSTEM_ACOUNT);
-                break;
+        if ("THS".equals(systemSelect)) {
+            selectOption(systemDropdownField, THS);
+        } else if ("Unidine".equals(systemSelect)) {
+            selectOption(systemDropdownField, UNIDINE);
+        } else if ("MealSuite".equals(systemSelect)) {
+            selectOption(systemDropdownField, MEAL_SUITE);
+        } else if ("System Account 1".equals(systemSelect)) {
+            selectOption(systemDropdownField, SYSTEM_ACOUNT);
         }
         return this;
     }

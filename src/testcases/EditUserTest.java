@@ -7,7 +7,7 @@ import pages.LoginPage;
 public class EditUserTest extends BaseTest{
 
 
-    @Test (groups = "CreateEditDeleteFlow")
+    @Test
     public void editUserWithNewInformation() {
         String newFirstName = "Testing";
         String newLastName = "Edited";
