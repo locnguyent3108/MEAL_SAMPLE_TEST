@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import utils.ActionsBuilder;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import static utils.TestUtil.IMPLICIT_WAIT_TIMEOUT;
@@ -70,6 +72,7 @@ public class BasePage {
 
     public void cleanText (By elementBy) {
         WebElement textBox = driver.findElement(elementBy);
+        textBox.click();
         textBox.clear();
     }
 
@@ -124,4 +127,12 @@ public class BasePage {
         wait = new WebDriverWait(driver,IMPLICIT_WAIT_TIMEOUT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+    public void enableAssignedAccess(By sourceLocator, By targetLocator) {
+        ActionsBuilder actte = new ActionsBuilder(driver);
+        WebElement source = getElement(sourceLocator);
+        WebElement target = getElement(targetLocator);
+        actte.dragAndDrop(source, target);
+    }
+
 }

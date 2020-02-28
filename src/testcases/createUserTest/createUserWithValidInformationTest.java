@@ -1,8 +1,9 @@
-package testcases;
+package testcases.createUserTest;
 
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
+import testcases.BaseTest;
 
 public class createUserWithValidInformationTest extends BaseTest {
     @Test

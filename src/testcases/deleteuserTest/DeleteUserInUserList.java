@@ -1,8 +1,9 @@
-package testcases;
+package testcases.deleteuserTest;
 
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
+import testcases.BaseTest;
 
 public class DeleteUserInUserList extends BaseTest {
     @Test

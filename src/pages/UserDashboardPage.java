@@ -48,6 +48,8 @@ public class UserDashboardPage extends BasePage{
     private By deleteButtonPopUp = By.xpath("//button[@class='btn btn-confirm btn-confirm-delete-ok']");
     private By countUserText = By.xpath("//span[@class='model-count']");
     private By deleteButton = By.xpath("//i[@class='fas fa-times-circle']");
+    private By unSelectColumns = By.xpath("//div[@id='unselected-columns-container']");
+    private By AssignAccess = By.xpath("//li[@id='selectable_column_assigned_access']");
     //*********Page Variable*********
     static final String EN = "Enlish";
     static final String FR = "French";
@@ -88,13 +90,14 @@ public class UserDashboardPage extends BasePage{
     //give text for first name
     public UserDashboardPage setFirstName( String firstName) {
         waitElementReady(firstNameFieldBy);
+        cleanText(firstNameFieldBy);
         writeText(firstNameFieldBy, firstName);
-
         return this;
     }
 
     //give text for last name
     public UserDashboardPage setLastName(String lastName) {
+        cleanText(lastnameFieldBy);
         writeText(lastnameFieldBy, lastName);
         hardWait();
         return this;
@@ -213,6 +216,7 @@ public class UserDashboardPage extends BasePage{
         totalUser = countUser.getText();
         return totalUser;
     }
+
     //*********Verify methods*********
     public UserDashboardPage isAccountCreateSuccess() {
         observesElementOnScreen(userTableBy, emailText);
@@ -222,6 +226,12 @@ public class UserDashboardPage extends BasePage{
     public UserDashboardPage isAccountEmpty() {
         waitForNextStep();
         observesTextOnScreen(validationError);
+        return this;
+    }
+
+    public UserDashboardPage isDisplayOnSelectedCollumns() {
+        WebElement unselectedBox = getElement(unSelectColumns);
+        WebElement check = unselectedBox.findElement(AssignAccess);
         return this;
     }
 

@@ -1,8 +1,9 @@
-package testcases;
+package testcases.createUserTest;
 
 import pages.DashboardPage;
 import pages.LoginPage;
 import org.testng.annotations.Test;
+import testcases.BaseTest;
 
 public class CreateNewAccountSuccessTest extends BaseTest {
 

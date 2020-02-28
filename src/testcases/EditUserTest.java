@@ -6,7 +6,6 @@ import pages.LoginPage;
 
 public class EditUserTest extends BaseTest{
 
-
     @Test
     public void editUserWithNewInformation() {
         String newFirstName = "Testing";
@@ -19,13 +18,9 @@ public class EditUserTest extends BaseTest{
         dashBoardPage.navigateUserDashboard()
                 .selectFirstUser()
                 .setFirstName(newFirstName)
-                .setLastName(newLastName)
+                //.setLastName(newLastName)
                 .submitForm()
         .isFirstLastNameUpdated(newFirstName, newLastName);
-
-    }
-
-    public void editUserWithWrongEmail() {
 
     }
 }
