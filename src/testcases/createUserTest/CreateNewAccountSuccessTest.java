@@ -8,7 +8,7 @@ import testcases.BaseTest;
 public class CreateNewAccountSuccessTest extends BaseTest {
 
     //create user with valid information
-    @Test
+    @Test(description = "create user with valid information")
     public void createUserWithValidInformationTest() {
         String email = randomEmail();
         LoginPage loginPage = new LoginPage(driver);

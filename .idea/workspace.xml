@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testcases/PreviewAccountLicense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/testExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ActionsBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/createUserTest/demoReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/CreateNewAccountSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/CreateNewAccountSuccessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/DeleteUserInFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/DeleteUserInUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInUserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/EditUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/createUserWithValidInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/createUserWithValidInformationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/createUserTest/CreateNewAccountSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/CreateNewAccountSuccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/createUserTest/createUserWithValidInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/createUserWithValidInformationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserDashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,42 +72,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EditUserTest.editUserWithNewInformation">
-    <configuration name="CreateNewAccountSuccessTest.createUserWithValidInformationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
+  <component name="RunManager" selected="TestNG./Users/reinz/Desktop/mealsuite_test/testng.xml">
+    <configuration name="CreateNewAccountSuccessTest.createUserWithValidInformationTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testcases.createUserTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="PACKAGE_NAME" value="testcases.createUserTest" />
       <option name="MAIN_CLASS_NAME" value="testcases.createUserTest.CreateNewAccountSuccessTest" />
       <option name="METHOD_NAME" value="createUserWithValidInformationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteUserInFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.createUserTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.deleteuserTest.DeleteUserInFormTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -174,13 +152,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/reinz/Desktop/mealsuite_test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/reinz/Desktop/mealsuite_test/testng.xml" />
+        <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithValidInformationTest (1)" />
         <item itemvalue="TestNG.EditUserTest.editUserWithNewInformation" />
         <item itemvalue="TestNG.DeleteUserInUserList.deleteUserInForm" />
         <item itemvalue="TestNG.DeleteUserInFormTest.deleteUserInForm" />
-        <item itemvalue="TestNG.DeleteUserInFormTest" />
-        <item itemvalue="TestNG.CreateNewAccountSuccessTest.createUserWithValidInformationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +189,8 @@
       <workItem from="1582792669062" duration="1242000" />
       <workItem from="1582880151953" duration="339000" />
       <workItem from="1582880544544" duration="3475000" />
+      <workItem from="1582993720522" duration="221000" />
+      <workItem from="1582994182203" duration="849000" />
     </task>
     <servers />
   </component>
@@ -215,9 +205,10 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="1093" y="305" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582710976692" />
-    <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1582883212364">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="329" y="281" width="374" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1582970461619">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="329" y="281" key="#com.intellij.ide.util.MemberChooser/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1582970461619" />
     <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1016@0.23.1920.1016" timestamp="1582883212364" />
     <state x="329" y="271" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1018@0.23.1920.1018" timestamp="1582618241403" />
     <state x="1087" y="423" width="536" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582781057056">
@@ -232,26 +223,38 @@
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state x="574" y="131" key="CommitChangelistDialog2/0.23.1920.1016@0.23.1920.1016" timestamp="1582884752659" />
-    <state width="1561" height="275" key="GridCell.Tab.0.bottom" timestamp="1582881926371">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1440" height="236" key="GridCell.Tab.0.bottom" timestamp="1582994975200">
+      <screen x="0" y="1103" width="1440" height="877" />
     </state>
+    <state width="1440" height="236" key="GridCell.Tab.0.bottom/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975200" />
+    <state width="1440" height="296" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582968954758" />
     <state width="1561" height="275" key="GridCell.Tab.0.bottom/0.23.1920.1016@0.23.1920.1016" timestamp="1582881926371" />
     <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906718" />
-    <state width="1561" height="275" key="GridCell.Tab.0.center" timestamp="1582881926370">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1920" height="296" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
+    <state width="1440" height="236" key="GridCell.Tab.0.center" timestamp="1582994975199">
+      <screen x="0" y="1103" width="1440" height="877" />
     </state>
+    <state width="1440" height="236" key="GridCell.Tab.0.center/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
+    <state width="1440" height="296" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
     <state width="1561" height="275" key="GridCell.Tab.0.center/0.23.1920.1016@0.23.1920.1016" timestamp="1582881926370" />
     <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906711" />
-    <state width="1561" height="275" key="GridCell.Tab.0.left" timestamp="1582881926370">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1920" height="296" key="GridCell.Tab.0.center/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
+    <state width="1440" height="236" key="GridCell.Tab.0.left" timestamp="1582994975198">
+      <screen x="0" y="1103" width="1440" height="877" />
     </state>
+    <state width="1440" height="236" key="GridCell.Tab.0.left/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975198" />
+    <state width="1440" height="296" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582968954756" />
     <state width="1561" height="275" key="GridCell.Tab.0.left/0.23.1920.1016@0.23.1920.1016" timestamp="1582881926370" />
     <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906710" />
-    <state width="1561" height="275" key="GridCell.Tab.0.right" timestamp="1582881926370">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1920" height="296" key="GridCell.Tab.0.left/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
+    <state width="1440" height="236" key="GridCell.Tab.0.right" timestamp="1582994975199">
+      <screen x="0" y="1103" width="1440" height="877" />
     </state>
+    <state width="1440" height="236" key="GridCell.Tab.0.right/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
+    <state width="1440" height="296" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
     <state width="1561" height="275" key="GridCell.Tab.0.right/0.23.1920.1016@0.23.1920.1016" timestamp="1582881926370" />
     <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906717" />
+    <state width="1920" height="296" key="GridCell.Tab.0.right/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
     <state width="1088" height="342" key="GridCell.Tab.1.bottom" timestamp="1582792410210">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
@@ -268,9 +271,10 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="1088" height="342" key="GridCell.Tab.1.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582792410210" />
-    <state x="656" y="193" key="Maven.ArtifactSearchDialog" timestamp="1582880387710">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="492" y="1250" key="Maven.ArtifactSearchDialog" timestamp="1582994835657">
+      <screen x="0" y="1103" width="1440" height="877" />
     </state>
+    <state x="492" y="1250" key="Maven.ArtifactSearchDialog/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994835657" />
     <state x="656" y="193" key="Maven.ArtifactSearchDialog/0.23.1920.1016@0.23.1920.1016" timestamp="1582880387710" />
     <state x="981" y="161" key="SettingsEditor" timestamp="1582880524316">
       <screen x="0" y="23" width="1920" height="1016" />
@@ -285,11 +289,13 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="512" height="509" key="XDebugger.FullValuePopup/0.23.1920.1018@0.23.1920.1018" timestamp="1582622230437" />
-    <state x="598" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1582880612056">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="598" y="377" key="com.intellij.ide.util.TipDialog" timestamp="1582994365532">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="598" y="377" key="com.intellij.ide.util.TipDialog/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994365532" />
     <state x="598" y="363" key="com.intellij.ide.util.TipDialog/0.23.1920.1016@0.23.1920.1016" timestamp="1582880612056" />
     <state x="598" y="364" key="com.intellij.ide.util.TipDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582792710148" />
+    <state x="598" y="377" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993770218" />
     <state x="1081" y="157" width="717" height="750" key="find.popup" timestamp="1582689947732">
       <screen x="0" y="23" width="1920" height="1018" />
     </state>

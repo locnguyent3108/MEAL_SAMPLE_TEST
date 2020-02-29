@@ -6,7 +6,7 @@ import pages.LoginPage;
 import testcases.BaseTest;
 
 public class createUserWithValidInformationTest extends BaseTest {
-    @Test
+    @Test (description = "create user with empty all fields")
     public void createUserWithEmptyAllField() {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
