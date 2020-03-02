@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/reinz/Desktop/mealsuite_test">
+    <test verbose="2" preserve-order="true" name="Test  " thread-count="2">
         <classes>
-<!--            <class name="testcases.EditUserTest">-->
-<!--                <methods>-->
-<!--                    <include name="editUserWithNewInformation"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testcases.createUserTest.CreateNewAccountSuccessTest">-->
-<!--                <methods>-->
-<!--                    <include name="createUserWithValidInformationTest"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testcases.createUserTest.createUserWithValidInformationTest">-->
-<!--                <methods>-->
-<!--                    <include name="createUserWithEmptyAllField"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testcases.deleteuserTest.DeleteUserInFormTest">-->
-<!--                <methods>-->
-<!--                    <include name="deleteUserInForm"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testcases.deleteuserTest.DeleteUserInUserList">-->
-<!--                <methods>-->
-<!--                    <include name="deleteUserInForm"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-        <class name="testcases.createUserTest.demoReport"/>
+            <class name="testcases.EditUserTest"/>
+            <class name="testcases.createUserTest.CreateNewAccountSuccessTest"/>
+            <class name="testcases.createUserTest.CreateUserWithEmptyInformationTest"/>
+            <class name="testcases.createUserTest.demoReport"/>
+            <class name="testcases.deleteuserTest.DeleteUserInFormTest"/>
+            <class name="testcases.deleteuserTest.DeleteUserInUserList"/>
+
+
         </classes>
     </test>
 </suite>

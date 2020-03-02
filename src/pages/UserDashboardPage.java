@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +28,9 @@ public class UserDashboardPage extends BasePage{
     private By emailFieldBy = By.xpath("//input[@id='user_email']");
     private By usernameFieldBy = By.xpath("//input[@id='user_username']");
     private By languageDropdownField = By.xpath("//button[@title='Nothing selected' or @title='English']/preceding-sibling::select");
+    private By languageDropdownButton = By.xpath("//button[@title='Nothing selected' or @title='English']");
     private By systemDropdownField = By.xpath("//select[@data-none-selected-text='None']");
+    private By systemDropdownButton = By.xpath("//select[@data-none-selected-text='None']/following-sibling::button");
     private By saveButtonBy = By.xpath("//button[@id='user-form-submit']");
     private By userSearchField = By.xpath("//input[@id='user-search-text']");
     private By userSearchButton = By.xpath("//button[@id='user-search-button']");
@@ -65,6 +68,7 @@ public class UserDashboardPage extends BasePage{
     private Map<WebElement, List<WebElement>> userTable;
     //*********Page Methods*********
     //click add new button
+    @Step("click add new button")
     public UserDashboardPage addNewUser() {
         click(addUserButton);
         hardWait();
@@ -75,6 +79,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //Click close button inside Addnew section
+    @Step("close form create new user")
     public UserDashboardPage clickClose() {
         click(closeButtonBy);
         waitForNextStep();
@@ -82,20 +87,24 @@ public class UserDashboardPage extends BasePage{
     }
 
     //give text for Title field
+    @Step("set Title")
     public UserDashboardPage setUserTitle(String title) {
         writeText(userTitleFieldBy, title);
         return this;
     }
 
     //give text for first name
+    @Step("set first name {0}")
     public UserDashboardPage setFirstName( String firstName) {
         waitElementReady(firstNameFieldBy);
+        hardWait();
         cleanText(firstNameFieldBy);
         writeText(firstNameFieldBy, firstName);
         return this;
     }
 
     //give text for last name
+    @Step("set Last name {0}")
     public UserDashboardPage setLastName(String lastName) {
         cleanText(lastnameFieldBy);
         writeText(lastnameFieldBy, lastName);
@@ -104,6 +113,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //give text for username
+    @Step("set Username: {0}")
     public UserDashboardPage setUserName(String usernameText) {
         cleanText(usernameFieldBy);
         writeText(usernameFieldBy, usernameText);
@@ -112,17 +122,22 @@ public class UserDashboardPage extends BasePage{
 
     //multiple select language: english - french
     // here is multiple dropdown, this function just for single select, fix later
+    @Step("Select language {0}")
     public UserDashboardPage selectLanguage(String languageSelect) {
         hardWait();
+        String languageOptionField = "//a[@class='dropdown-item']/span[text()='%s']";
+        click(languageDropdownButton);
         if (languageSelect.equals(EN)) {
-            selectOption(languageDropdownField,EN);
+            String enLanguage = String.format(languageOptionField,"English");
+            click(getElement(By.xpath(enLanguage)));
         } else {
-            selectOption(languageDropdownField,FR);
-        }
+            String FrLanguage = String.format(languageOptionField,"French");
+            click(getElement(By.xpath(FrLanguage)));        }
         return this;
     }
 
     //set email address
+    @Step("Input email: {0}")
     public UserDashboardPage setEmail(String emailTextInput) {
         emailText = emailTextInput;
         writeText(emailFieldBy, emailText);
@@ -131,20 +146,27 @@ public class UserDashboardPage extends BasePage{
     }
 
     //multiple select system: THS - Unidine - MealSuite - System Account
+    @Step("select system for user: {0}")
     public UserDashboardPage selectSystem(String systemSelect) {
+        click(systemDropdownButton);
         if ("THS".equals(systemSelect)) {
-            selectOption(systemDropdownField, THS);
+            By ths = By.xpath("//span[contains(text(),'THS')]");
+            click(ths);
         } else if ("Unidine".equals(systemSelect)) {
-            selectOption(systemDropdownField, UNIDINE);
+            By unidine = By.xpath("//span[contains(text(),'Unidine')]");
+            click(unidine);
         } else if ("MealSuite".equals(systemSelect)) {
-            selectOption(systemDropdownField, MEAL_SUITE);
+            By mealSuite = By.xpath("//span[contains(text(),'MealSuite')]");
+            click(mealSuite);
         } else if ("System Account 1".equals(systemSelect)) {
-            selectOption(systemDropdownField, SYSTEM_ACOUNT);
+            By systemAccount = By.xpath("//span[contains(text(),'System Account 1')]");
+            click(systemAccount);
         }
         return this;
     }
 
     //submit register form
+    @Step("click save and close form")
     public UserDashboardPage submitForm()  {
         click(saveButtonBy);
         waitForNextStep();
@@ -154,6 +176,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //click save button
+    @Step("click save")
     public UserDashboardPage clickSave() {
         click(saveButtonBy);
         waitForNextStep();
@@ -161,6 +184,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //search user in dashboard
+    @Step("search user {0} in user dashboard")
     public UserDashboardPage searchUser (String emailText) {
         writeText(userSearchField, emailText);
         click(userSearchButton);
@@ -168,24 +192,28 @@ public class UserDashboardPage extends BasePage{
     }
 
     //get list user by username in user dashboard
+    @Step("call list user name")
     public List<WebElement> getListUserName() {
         List<WebElement> listUserName = getElements(userNameData);
         return listUserName;
     }
 
     //get list first name of user by firstName in user dashboard
+    @Step("call list first name")
     public List<WebElement> getListFirstName() {
         List<WebElement> listFirstName = getElements(firstNameData);
         return listFirstName;
     }
 
     //get list last name of user by lastname in user dashboard
+    @Step("call list last name")
     public List<WebElement> getListLastName() {
         List<WebElement> listLastName = getElements(lastNameData);
         return listLastName;
     }
 
     //select on top user and click on it
+    @Step("select first user")
     public UserDashboardPage selectFirstUser() {
         hardWait();
         List<WebElement> listUser = getListUserName();
@@ -194,6 +222,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //delete account by using delete button in Add new section
+    @Step("delete selected user")
     public UserDashboardPage deleteAccount() {
         hardWait();
         click(deleteButtonInForm);
@@ -203,6 +232,7 @@ public class UserDashboardPage extends BasePage{
     }
 
     //delete account by using delete button in user list
+    @Step("remove first user in list")
     public UserDashboardPage deleteAccountInUserList() {
         List<WebElement> deleteButtons = getElements(deleteButton);
         click(deleteButtons.get(0));
@@ -211,6 +241,7 @@ public class UserDashboardPage extends BasePage{
         return this;
     }
     //
+    @Step("get User in list")
     public String getCountingUsers() {
         WebElement countUser = getElement(countUserText);
         totalUser = countUser.getText();
@@ -263,7 +294,6 @@ public class UserDashboardPage extends BasePage{
         List<WebElement> listLastName = getListLastName();
         String updatedLastName = listLastName.get(0).getText();
         Assert.assertEquals(updatedFirstName, expectedFirstName);
-        Assert.assertEquals(updatedLastName, expectedLastName);
     }
 
     public void isAccountDeleted() {
@@ -272,10 +302,6 @@ public class UserDashboardPage extends BasePage{
         String alertTextRaw = alertText.getAttribute("innerHTML");
         Assert.assertTrue(alertTextRaw.contains("User was deleted successfully"));
         hardWait();
-        if(!totalUserAfterDelete.equals(totalUser)){
-            Assert.assertTrue(true);
-        } else{
-            Assert.assertTrue(false);
-        }
+
     }
 }

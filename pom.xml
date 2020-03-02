@@ -55,14 +55,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- setup test rail -->
-        <dependency>
-            <groupId>com.codepine.api</groupId>
-            <artifactId>testrail-api-java-client</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>

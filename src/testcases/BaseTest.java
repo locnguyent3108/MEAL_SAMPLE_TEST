@@ -29,9 +29,18 @@ import java.util.logging.Level;
 
 public class BaseTest {
     public WebDriver driver;
+    private static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+    public static synchronized WebDriver getDriver() {
+        return tdriver.get();
+    }
+
+    public JavascriptExecutor getJs() {
+        return js;
+    }
+
     public JavascriptExecutor js;
 
-    @BeforeTest
+    @BeforeClass
     public void setup () {
         //Install chromeDriver
 //      WebDriverManager.chromedriver().version("72.0").setup();
@@ -52,9 +61,10 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
+        tdriver.set(driver);
     }
 
-    @AfterTest
+    @AfterClass
     public void teardown () {
         driver.manage().deleteAllCookies();
         driver.quit();
