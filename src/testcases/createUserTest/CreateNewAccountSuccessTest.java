@@ -10,7 +10,6 @@ public class CreateNewAccountSuccessTest extends BaseTest {
 
     //create user with valid information
     @Test (priority = 0, description="Create new user with valid information.")
-    @Description("CRE_ACC_01: login and create new user with valid information")
     public void createUserWithValidInformationTest() {
         String email = randomEmail();
         LoginPage loginPage = new LoginPage(driver);

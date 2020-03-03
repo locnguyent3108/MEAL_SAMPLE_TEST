@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.UserLevelAccount;
 
 public class LoginPage extends BasePage {
 
@@ -56,8 +57,10 @@ public class LoginPage extends BasePage {
      * login with default credential
      */
     public DashboardPage loginWithDefaultAccount() {
-        setUserName("FullAcFac-Super");
-            setPassword("Password123!");
+        UserLevelAccount userFacility = UserLevelAccount.DATABASE_USER_MANAGE;
+        setUserName(userFacility.getUserName());
+            setPassword(userFacility.getPassword());
+
         click(loginButtonBy);
         return new DashboardPage(wait, driver);
     }

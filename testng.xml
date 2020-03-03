@@ -10,7 +10,6 @@
             <class name="testcases.deleteuserTest.DeleteUserInFormTest"/>
             <class name="testcases.deleteuserTest.DeleteUserInUserList"/>
 
-
         </classes>
     </test>
 </suite>
