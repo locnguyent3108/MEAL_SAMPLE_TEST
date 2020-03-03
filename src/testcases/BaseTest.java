@@ -3,6 +3,7 @@ package testcases;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -43,24 +44,19 @@ public class BaseTest {
     @BeforeClass
     public void setup () {
         //Install chromeDriver
-//      WebDriverManager.chromedriver().version("72.0").setup();
-      WebDriverManager.firefoxdriver().version("73.0").setup();
-
-//        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
-
         //Create a Chrome driver.
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
-        options.addArguments("--disable-gpu");
+//            driver = getChromeDriverInstance(driver);
+        //Create a Firefox driver
+        driver = getFirefoxDriverInstance(driver);
 
-//        driver = new ChromeDriver(options);
-        driver = new FirefoxDriver();
         //instantiate javascript executor
         js = (JavascriptExecutor) driver;
-        //clean up
+
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
+
+        //clean up
         tdriver.set(driver);
     }
 
@@ -73,5 +69,26 @@ public class BaseTest {
     public String randomEmail() {
         String randomMail = "test" + (int)(Math.random() * 5000 + 1) + "@yopmail.com";
         return randomMail;
+    }
+
+    public WebDriver getChromeDriverInstance(WebDriver chromeDriverInstance) {
+        WebDriverManager.chromedriver().version("72.0").setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--headless");
+        chromeDriverInstance = new ChromeDriver();
+
+        return chromeDriverInstance;
+    }
+
+    public WebDriver getFirefoxDriverInstance(WebDriver firefoxDriverInstance) {
+        WebDriverManager.firefoxdriver().version("73.0").setup();
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(true);
+        options.addArguments("--disable-gpu");
+        options.addArguments("--headless");
+        firefoxDriverInstance = new FirefoxDriver(options);
+        return firefoxDriverInstance;
     }
 }
