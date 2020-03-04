@@ -1,10 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NotFoundException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utils.ActionsBuilder;
@@ -25,9 +22,12 @@ public class NonFoodItemPage  extends BasePage {
     private By publishedButton = By.xpath("//a[@class='green px-2']//i[@class='fas fa-check-circle']");
     private By unPublishButton = By.xpath("//a[@class='text-dark px-2']//i[@class='fas fa-check-circle']");
     private By nonFoodItemColumn = By.xpath("//a[contains(@href,'/edit')]");
+    private By nonFoodItemSearch = By.xpath("//input[@id='non-food-item-search-text']");
+    private By searchResultEmpty = By.xpath("//div[@id='recipes']//h3[@class='p-4 gray']");
     //*********Page Methods*********
     String getRowByLookUpName = "//tr[td[a[contains(text(),'%s')]]]/td";
     String getPublishButtonByLookupName = "//tr[td[a[contains(text(),'%s')]]]//a[1]";
+
     @Step("Hover to Check circle")
     public NonFoodItemPage hoverCheckCircle() {
         ActionsBuilder hoverToItem = new ActionsBuilder(driver);
@@ -66,6 +66,15 @@ public class NonFoodItemPage  extends BasePage {
         return this;
     }
 
+    @Step("search non food item")
+    public NonFoodItemPage searchUnpublished(String nonFoodItem) {
+        WebElement searchTextBox = getElement(nonFoodItemSearch);
+        searchTextBox.sendKeys(nonFoodItem);
+        searchTextBox.sendKeys(Keys.ENTER);
+        return this;
+    }
+
+
     public Boolean isUnpublish(String nonFoodName) {
         String nonFoodItem = String.format(getPublishButtonByLookupName,nonFoodName);
 
@@ -75,14 +84,9 @@ public class NonFoodItemPage  extends BasePage {
         return false;
     }
 
-    public void isWhereUsedButtonDisplayed() {
-
+    public void isSearchResultEmpty() {
+        Assert.assertEquals(getElement(searchResultEmpty).getText(),"No results matched your search criteria.");
     }
-
-    public void isDeleteButtonDisplayed() {
-
-    }
-
 
     public LoginPage logOut() {
         click(logOutButton);

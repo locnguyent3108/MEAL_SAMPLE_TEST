@@ -5,6 +5,7 @@ import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
+import pages.NonFoodItemPage;
 import testcases.BaseTest;
 
 public class NonFoodAddEditTest  extends BaseTest {
@@ -15,23 +16,32 @@ public class NonFoodAddEditTest  extends BaseTest {
         String nonFoodItem = "Straw, Plastic";
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
-
-        //Step 1: DBUser login to Non-Food items
+        NonFoodItemPage nonFoodItemPage = new NonFoodItemPage(driver);
+//Step 1: DBUser login to Non-Food items
         loginPage.goToLoginPage()
-                .loginWithDataBaseAccount();
+                        .loginWithDataBaseAccount();
 
-        dashBoardPage.navigateNonFoodItemPage()
-        //Step 2,3,4: click check-circle icon to publish a Non-food item.
-                .ClickPublishButton(nonFoodItem)
-        //Step 5: click check-circle icon to unpbulish a Non-Food item.
-                .ClickPublishButton(nonFoodItem)
-                .logOut();
+        dashBoardPage
+                        .navigateNonFoodItemPage();
+//Step 2,3,4: click check-circle icon to publish a Non-food item.
+        nonFoodItemPage
+                        .ClickPublishButton(nonFoodItem)
+//Step 5: click check-circle icon to unpbulish a Non-Food item.
+                        .ClickPublishButton(nonFoodItem)
+                        .logOut();
 
-        //Step 6: log in ass child account,
-        loginPage.loginWithFacilityAccount();
+//Step 6: log in ass child account,
+        loginPage
+                        .loginWithFacilityAccount();
+        dashBoardPage
+                        .navigateNonFoodItemPage();
+        nonFoodItemPage
+                .isNonFoodItemUnDisplayed(nonFoodItem)
 
-        dashBoardPage.navigateNonFoodItemPage()
-        .isNonFoodItemUnDisplayed(nonFoodItem);
+//Step 7: Search for the non-food you've unublished
+                        .searchUnpublished(nonFoodItem)
+                .isSearchResultEmpty();
+
+//Step 8: Unpublish a non-food in account you are currently logge in as.
     }
-
 }

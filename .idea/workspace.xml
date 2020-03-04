@@ -2,70 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/01c54d7b-df62-469d-981f-e0045d81154f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/08baf65b-07ce-407f-80ea-f01ab1112a4a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0b0d4fe1-ce61-4d7c-99c4-4a225f3d4a36-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0ee45082-a245-4c28-8d13-764a9c3885a2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/13c3b9a0-448a-421d-8667-144673011544-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1b3593b5-98fe-48f4-8ac3-46be7d0572a9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/20e2d537-d2b5-4868-b239-ff7d56d7273e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/213c308c-718b-4230-9f2a-a57125092dfb-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2b36a389-efa9-4615-8da3-8c24f5a886b0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/32133d1c-347e-4a42-9f74-51eb7d7565d1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/35f567a8-5f7b-4314-8534-0efe6b1cedfa-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/392f300f-7adb-4172-9b43-1f8177c10a76-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3ac0d7c6-e3dc-44e1-b05b-d1e025d2bcab-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4482411b-885a-4f22-9197-583865f8a0dd-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/52fba8cb-fe32-421e-b30b-e85f218840e4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/56a8aacd-4045-4abb-821c-3275fe1f9325-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/68b0ac5f-da25-4b28-80be-8f86f7a36981-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6b46246a-ae84-495b-9b91-996c42b56096-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6c858a72-0bba-4d8d-9da9-058ae0d40e1c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6c8eebf4-39cd-4d8a-86e9-b9070a8d81d6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6fdf760b-bb4f-4741-8542-19f8a558f9bc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/804ed28d-f513-4ab8-8888-658cfeb21bd8-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8c640c56-3f64-4bba-a49b-8eb07800f542-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/90f48ed9-4d25-445e-942f-60143bea987e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9687fb0b-61c9-43a9-86fb-623f9942f6da-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/998eba97-aa77-4c8e-b9c3-5c636eb50842-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9f87c3e0-ecee-4d5b-bc6c-3400f59610ac-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a1c64e28-5906-4052-9ed3-1747d04ad5a7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ac4a98c3-7384-4ea6-a7da-d9ceba0031e9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc6c60d2-1694-459d-a5af-4d3e7e8728fc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cda52084-c41c-411b-af76-6647393588cf-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d3264778-56d2-4e87-8dbc-77ac17e7e4e0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/df1e28b2-0721-41af-a8e5-97f0f9597461-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e4bdb384-ace4-4fdd-ac55-407a76edd180-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e4f24313-3442-4b22-aca8-1e0442cf1b84-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f2284d24-901f-4c42-8f6b-ff88cd28c425-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f4c82c9f-0835-43b6-b2ce-49e5ae9f6b71-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f4f80a7e-c81c-4331-9ec6-dac9bf19dd46-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ff950be9-808b-4ffc-b38e-4d8c03ec117f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/fff6288d-985b-4568-819f-3b79b78bdc2c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NonFoodItemPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/49334fda-8206-4120-9879-dc0a4ffce1e0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/52f11b73-a39e-4726-8ad4-c9f27f2706e0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/579bcbbc-3a86-4650-91b1-c781e4989f8e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/616b657b-21ef-4d36-8ceb-31c0038ef6ac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7a3116df-11be-4a90-b5aa-dc298c790101-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7c507158-f2bc-4859-a710-56d7a48ab745-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8c426433-86ec-4ef6-a3e8-6c0a52dbe8bb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a095425f-f9b6-49a4-8592-043b042c06ac-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ac17e991-f46a-499f-96b6-e4dbdc4d9da5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b04a966e-f2c1-42b9-978b-a3c2e6db9e34-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b86eae05-f584-4fd1-9f56-fcbf4200523a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bc1296c8-17a8-4255-a20b-bb5c29ffe995-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cf6667a5-c116-4b7e-8caf-c825640d8d6d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/de40aa1e-9bc9-452b-b9d7-083b10c847e6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e632a048-17cf-448c-ad63-a89c9eda116d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e99dcdb3-ffaa-4d94-bb3d-a9ffd1d4efef-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/EditUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/EditUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/createUserTest/CreateNewAccountSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/CreateNewAccountSuccessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/createUserTest/CreateUserWithEmptyInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/createUserTest/CreateUserWithEmptyInformationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/createUserTest/demoReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/deleteuserTest/DeleteUserInUserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ActionsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ActionsBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/EditUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/createUserTest/CreateNewAccountSuccessTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/createUserTest/CreateNewAccountSuccessTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/createUserTest/CreateUserWithEmptyInformationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/createUserTest/CreateUserWithEmptyInformationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/createUserTest/demoReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/deleteuserTest/DeleteUserInFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/deleteuserTest/DeleteUserInFormTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/deleteuserTest/DeleteUserInUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/deleteuserTest/DeleteUserInUserList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/ActionsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ActionsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NonFoodItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NonFoodItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/NonFoodItemPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/NonFoodItemPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +204,7 @@
       <workItem from="1582880544544" duration="3475000" />
       <workItem from="1582993720522" duration="221000" />
       <workItem from="1582994182203" duration="849000" />
-      <workItem from="1583138843750" duration="29771000" />
+      <workItem from="1583138843750" duration="32298000" />
     </task>
     <servers />
   </component>
@@ -281,36 +238,36 @@
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state x="574" y="131" key="CommitChangelistDialog2/0.23.1920.1016@0.23.1920.1016" timestamp="1582884752659" />
-    <state width="1114" height="427" key="GridCell.Tab.0.bottom" timestamp="1583314891988">
+    <state width="1114" height="273" key="GridCell.Tab.0.bottom" timestamp="1583316782445">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state width="1440" height="236" key="GridCell.Tab.0.bottom/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975200" />
     <state width="1440" height="296" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582968954758" />
-    <state width="1114" height="427" key="GridCell.Tab.0.bottom/0.23.1920.1016@0.23.1920.1016" timestamp="1583314891988" />
+    <state width="1114" height="273" key="GridCell.Tab.0.bottom/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906718" />
     <state width="1920" height="296" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
-    <state width="1114" height="427" key="GridCell.Tab.0.center" timestamp="1583314891988">
+    <state width="1114" height="273" key="GridCell.Tab.0.center" timestamp="1583316782445">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state width="1440" height="236" key="GridCell.Tab.0.center/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
     <state width="1440" height="296" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
-    <state width="1114" height="427" key="GridCell.Tab.0.center/0.23.1920.1016@0.23.1920.1016" timestamp="1583314891988" />
+    <state width="1114" height="273" key="GridCell.Tab.0.center/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906711" />
     <state width="1920" height="296" key="GridCell.Tab.0.center/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
-    <state width="1114" height="427" key="GridCell.Tab.0.left" timestamp="1583314891987">
+    <state width="1114" height="273" key="GridCell.Tab.0.left" timestamp="1583316782444">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state width="1440" height="236" key="GridCell.Tab.0.left/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975198" />
     <state width="1440" height="296" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582968954756" />
-    <state width="1114" height="427" key="GridCell.Tab.0.left/0.23.1920.1016@0.23.1920.1016" timestamp="1583314891987" />
+    <state width="1114" height="273" key="GridCell.Tab.0.left/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782444" />
     <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906710" />
     <state width="1920" height="296" key="GridCell.Tab.0.left/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
-    <state width="1114" height="427" key="GridCell.Tab.0.right" timestamp="1583314891988">
+    <state width="1114" height="273" key="GridCell.Tab.0.right" timestamp="1583316782445">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state width="1440" height="236" key="GridCell.Tab.0.right/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
     <state width="1440" height="296" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
-    <state width="1114" height="427" key="GridCell.Tab.0.right/0.23.1920.1016@0.23.1920.1016" timestamp="1583314891988" />
+    <state width="1114" height="273" key="GridCell.Tab.0.right/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906717" />
     <state width="1920" height="296" key="GridCell.Tab.0.right/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
     <state width="1114" height="427" key="GridCell.Tab.1.bottom" timestamp="1583314891989">
@@ -402,19 +359,9 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pages/NonFoodItemPage.java</url>
-          <line>101</line>
+          <line>105</line>
           <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
