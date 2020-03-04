@@ -26,4 +26,11 @@ public class ActionsBuilder extends BasePage {
                 .build();
         moveAction.perform();
     }
+
+    public void hover(WebElement element){
+        Action hoverAction = builder
+                .moveToElement(element)
+                .build();
+        hoverAction.perform();
+    }
 }

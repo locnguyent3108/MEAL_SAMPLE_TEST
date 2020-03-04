@@ -13,7 +13,7 @@ public class CreateUserWithEmptyInformationTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
+                .loginWithDataBaseAccount();
 
         dashBoardPage.navigateUserDashboard()
                 .addNewUser()

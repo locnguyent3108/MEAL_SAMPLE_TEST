@@ -9,12 +9,12 @@ import testcases.BaseTest;
 public class DeleteUserInFormTest extends BaseTest {
 
     @Test (priority = 0, description="Delete user in add new form")
-    @Description("DEL_ACC_01: verify user can be deleted in form")
+    @Description("DEL_ACC_01: `verify user can be deleted in form")
     public void deleteUserInForm() {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
+                .loginWithDataBaseAccount();
 
         dashBoardPage.navigateUserDashboard()
                      .selectFirstUser()

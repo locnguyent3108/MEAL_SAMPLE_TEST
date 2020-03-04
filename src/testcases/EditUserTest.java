@@ -22,7 +22,7 @@ public class EditUserTest extends BaseTest{
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
+                .loginWithDataBaseAccount();
 
         dashBoardPage.navigateUserDashboard()
                 .selectFirstUser()
@@ -30,6 +30,5 @@ public class EditUserTest extends BaseTest{
                 //.setLastName(newLastName)
                 .submitForm()
         .isFirstLastNameUpdated(newFirstName, newLastName);
-
     }
 }

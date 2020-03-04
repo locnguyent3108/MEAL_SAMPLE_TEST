@@ -83,11 +83,11 @@ public class BaseTest {
     }
 
     public WebDriver getFirefoxDriverInstance(WebDriver firefoxDriverInstance) {
-        WebDriverManager.firefoxdriver().version("73.0").setup();
+        WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(true);
+//        options.setHeadless(true);
         options.addArguments("--disable-gpu");
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         firefoxDriverInstance = new FirefoxDriver(options);
         return firefoxDriverInstance;
     }

@@ -14,7 +14,7 @@ public class DeleteUserInUserList extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
+                .loginWithDataBaseAccount();
 
         dashBoardPage.navigateUserDashboard()
                 .deleteAccountInUserList()

@@ -1,6 +1,5 @@
 package testcases.createUserTest;
 
-import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
@@ -15,7 +14,7 @@ public class CreateNewAccountSuccessTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashBoardPage = new DashboardPage(driver);
         loginPage.goToLoginPage()
-                .loginWithDefaultAccount();
+                .loginWithDataBaseAccount();
 
         dashBoardPage.navigateUserDashboard()
                 .addNewUser()

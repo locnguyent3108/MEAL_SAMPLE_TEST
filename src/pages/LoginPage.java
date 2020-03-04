@@ -56,10 +56,10 @@ public class LoginPage extends BasePage {
     /**
      * login with default credential
      */
-    public DashboardPage loginWithDefaultAccount() {
-        UserLevelAccount userFacility = UserLevelAccount.DATABASE_USER_MANAGE;
-        setUserName(userFacility.getUserName());
-            setPassword(userFacility.getPassword());
+    public DashboardPage loginWithDataBaseAccount() {
+        UserLevelAccount userDatabase = UserLevelAccount.DATABASE_USER_MANAGE;
+        setUserName(userDatabase.getUserName());
+            setPassword(userDatabase.getPassword());
 
         click(loginButtonBy);
         return new DashboardPage(wait, driver);
@@ -92,4 +92,11 @@ public class LoginPage extends BasePage {
         return this;
     }
 
+    public DashboardPage loginWithFacilityAccount() {
+        UserLevelAccount userFacility = UserLevelAccount.FACILITY_USER_MANAGE;
+        setUserName(userFacility.getUserName());
+        setPassword(userFacility.getPassword());
+        click(loginButtonBy);
+        return new DashboardPage(wait, driver);
+    }
 }
