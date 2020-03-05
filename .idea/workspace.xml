@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/49334fda-8206-4120-9879-dc0a4ffce1e0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/52f11b73-a39e-4726-8ad4-c9f27f2706e0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/579bcbbc-3a86-4650-91b1-c781e4989f8e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/616b657b-21ef-4d36-8ceb-31c0038ef6ac-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7a3116df-11be-4a90-b5aa-dc298c790101-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7c507158-f2bc-4859-a710-56d7a48ab745-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8c426433-86ec-4ef6-a3e8-6c0a52dbe8bb-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a095425f-f9b6-49a4-8592-043b042c06ac-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ac17e991-f46a-499f-96b6-e4dbdc4d9da5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b04a966e-f2c1-42b9-978b-a3c2e6db9e34-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b86eae05-f584-4fd1-9f56-fcbf4200523a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc1296c8-17a8-4255-a20b-bb5c29ffe995-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cf6667a5-c116-4b7e-8caf-c825640d8d6d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/de40aa1e-9bc9-452b-b9d7-083b10c847e6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e632a048-17cf-448c-ad63-a89c9eda116d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e99dcdb3-ffaa-4d94-bb3d-a9ffd1d4efef-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FoodPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/food/FoodAddEditTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NonFoodItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NonFoodItemPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/nonfood/NonFoodAddEditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/NonFoodItemPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/NonFoodItemPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +186,7 @@
       <workItem from="1582880544544" duration="3475000" />
       <workItem from="1582993720522" duration="221000" />
       <workItem from="1582994182203" duration="849000" />
-      <workItem from="1583138843750" duration="32298000" />
+      <workItem from="1583138843750" duration="33880000" />
     </task>
     <servers />
   </component>
@@ -219,11 +201,11 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="1093" y="305" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582710976692" />
-    <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1583297389231">
+    <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1583379857228">
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state x="329" y="281" key="#com.intellij.ide.util.MemberChooser/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1582970461619" />
-    <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1016@0.23.1920.1016" timestamp="1583297389231" />
+    <state x="329" y="271" width="374" height="639" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1016@0.23.1920.1016" timestamp="1583379857228" />
     <state x="329" y="271" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1018@0.23.1920.1018" timestamp="1582618241403" />
     <state x="1087" y="422" width="536" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583306409334">
       <screen x="0" y="23" width="1920" height="1016" />
