@@ -1,6 +1,7 @@
 package pages;
 
 
+import io.qameta.allure.Step;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -96,6 +97,14 @@ public class LoginPage extends BasePage {
         UserLevelAccount userFacility = UserLevelAccount.FACILITY_USER_MANAGE;
         setUserName(userFacility.getUserName());
         setPassword(userFacility.getPassword());
+        click(loginButtonBy);
+        return new DashboardPage(wait, driver);
+    }
+
+    @Step("Login with {0}: ")
+    public DashboardPage loginToDashBoard(UserLevelAccount user) {
+        setUserName(user.getUserName());
+        setPassword(user.getPassword());
         click(loginButtonBy);
         return new DashboardPage(wait, driver);
     }

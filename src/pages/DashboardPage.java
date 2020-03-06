@@ -17,6 +17,8 @@ public class DashboardPage extends BasePage {
     //*********Page variables*********
     String userDashboardUrl = "/users";
     String nonFoodItemURL = "/non_food_items";
+    String foodItemURL = "/foods";
+
     //*********Web Elements*********
     By mainMenubutton = By.xpath("//a[@id='trigger']/i");
 
@@ -45,4 +47,9 @@ public class DashboardPage extends BasePage {
         return new NonFoodItemPage(this.wait, this.driver);
     }
 
+    public FoodPage navigateFoodItemPage() {
+        navigate(foodItemURL);
+        return new FoodPage(this.wait, this.driver);
+
+    }
 }

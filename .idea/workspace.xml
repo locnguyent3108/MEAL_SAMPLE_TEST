@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef91a8b-ecc1-4d1b-8cbf-d3235d200537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/FoodPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testcases/food/FoodAddEditTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcases/food/FoodListPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FoodPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FoodPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testcases/food/FoodAddEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testcases/food/FoodAddEditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testcases/nonfood/NonFoodAddEditTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +49,11 @@
       <list>
         <option value="locnguyent3108 &lt;locnguyent3108@gmail.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev3" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,7 +90,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NonFoodAddEditTest.nonFoodAddEditTest">
+  <component name="RunManager" selected="TestNG.FoodAddEditTest.foodAddEditTEst">
     <configuration name="DeleteUserInFormTest.deleteUserInForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mealsuite_automation" />
       <extension name="coverage">
@@ -93,17 +109,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditUserTest.editUserWithNewInformation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
+    <configuration name="FoodAddEditTest.foodAddEditTEst" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.food.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.EditUserTest" />
-      <option name="METHOD_NAME" value="editUserWithNewInformation" />
+      <option name="PACKAGE_NAME" value="testcases.food" />
+      <option name="MAIN_CLASS_NAME" value="testcases.food.FoodAddEditTest" />
+      <option name="METHOD_NAME" value="foodAddEditTEst" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodListPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.food.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases.food" />
+      <option name="MAIN_CLASS_NAME" value="testcases.food.FoodListPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodListPageTest.foodAddEditTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mealsuite_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.food.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases.food" />
+      <option name="MAIN_CLASS_NAME" value="testcases.food.FoodListPageTest" />
+      <option name="METHOD_NAME" value="foodAddEditTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -129,41 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/locnt/IdeaProjects/com.mealsuite_automation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="demoReport.testFailCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mealsuite_automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.createUserTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases.createUserTest" />
-      <option name="MAIN_CLASS_NAME" value="testcases.createUserTest.demoReport" />
-      <option name="METHOD_NAME" value="testFailCase" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FoodAddEditTest.foodAddEditTEst" />
+        <item itemvalue="TestNG.FoodListPageTest.foodAddEditTest" />
+        <item itemvalue="TestNG.FoodListPageTest" />
         <item itemvalue="TestNG.NonFoodAddEditTest.nonFoodAddEditTest" />
         <item itemvalue="TestNG.DeleteUserInFormTest.deleteUserInForm" />
-        <item itemvalue="TestNG./Users/locnt/IdeaProjects/com.mealsuite_automation/testng.xml" />
-        <item itemvalue="TestNG.EditUserTest.editUserWithNewInformation" />
-        <item itemvalue="TestNG.demoReport.testFailCase" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +210,8 @@
       <workItem from="1582993720522" duration="221000" />
       <workItem from="1582994182203" duration="849000" />
       <workItem from="1583138843750" duration="33880000" />
+      <workItem from="1583426729118" duration="59000" />
+      <workItem from="1583426803031" duration="6734000" />
     </task>
     <servers />
   </component>
@@ -220,35 +245,43 @@
       <screen x="0" y="23" width="1920" height="1016" />
     </state>
     <state x="574" y="131" key="CommitChangelistDialog2/0.23.1920.1016@0.23.1920.1016" timestamp="1582884752659" />
-    <state width="1114" height="273" key="GridCell.Tab.0.bottom" timestamp="1583316782445">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="522" height="466" key="DebuggerActiveHint" timestamp="1583463101647">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state width="522" height="466" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1583463101647" />
+    <state width="1440" height="294" key="GridCell.Tab.0.bottom" timestamp="1583463984385">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1920" height="366" key="GridCell.Tab.0.bottom/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583431364788" />
     <state width="1440" height="236" key="GridCell.Tab.0.bottom/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975200" />
-    <state width="1440" height="296" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582968954758" />
+    <state width="1440" height="294" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583463984385" />
     <state width="1114" height="273" key="GridCell.Tab.0.bottom/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.bottom/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906718" />
     <state width="1920" height="296" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
-    <state width="1114" height="273" key="GridCell.Tab.0.center" timestamp="1583316782445">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1440" height="294" key="GridCell.Tab.0.center" timestamp="1583463984384">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state width="1920" height="366" key="GridCell.Tab.0.center/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583431364787" />
     <state width="1440" height="236" key="GridCell.Tab.0.center/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
-    <state width="1440" height="296" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
+    <state width="1440" height="294" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583463984384" />
     <state width="1114" height="273" key="GridCell.Tab.0.center/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.center/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906711" />
     <state width="1920" height="296" key="GridCell.Tab.0.center/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
-    <state width="1114" height="273" key="GridCell.Tab.0.left" timestamp="1583316782444">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1440" height="294" key="GridCell.Tab.0.left" timestamp="1583463984383">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state width="1920" height="366" key="GridCell.Tab.0.left/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583431364786" />
     <state width="1440" height="236" key="GridCell.Tab.0.left/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975198" />
-    <state width="1440" height="296" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582968954756" />
+    <state width="1440" height="294" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583463984383" />
     <state width="1114" height="273" key="GridCell.Tab.0.left/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782444" />
     <state width="1088" height="277" key="GridCell.Tab.0.left/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906710" />
     <state width="1920" height="296" key="GridCell.Tab.0.left/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571019" />
-    <state width="1114" height="273" key="GridCell.Tab.0.right" timestamp="1583316782445">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state width="1440" height="294" key="GridCell.Tab.0.right" timestamp="1583463984384">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state width="1920" height="366" key="GridCell.Tab.0.right/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583431364787" />
     <state width="1440" height="236" key="GridCell.Tab.0.right/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994975199" />
-    <state width="1440" height="296" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582968954757" />
+    <state width="1440" height="294" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583463984384" />
     <state width="1114" height="273" key="GridCell.Tab.0.right/0.23.1920.1016@0.23.1920.1016" timestamp="1583316782445" />
     <state width="1088" height="277" key="GridCell.Tab.0.right/0.23.1920.1018@0.23.1920.1018" timestamp="1582793906717" />
     <state width="1920" height="296" key="GridCell.Tab.0.right/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993571020" />
@@ -277,9 +310,10 @@
     </state>
     <state x="492" y="1250" key="Maven.ArtifactSearchDialog/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994835657" />
     <state x="656" y="193" key="Maven.ArtifactSearchDialog/0.23.1920.1016@0.23.1920.1016" timestamp="1582880387710" />
-    <state x="981" y="161" key="SettingsEditor" timestamp="1582880524316">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="938" y="167" key="SettingsEditor" timestamp="1583426791106">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="938" y="167" key="SettingsEditor/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583426791106" />
     <state x="981" y="161" key="SettingsEditor/0.23.1920.1016@0.23.1920.1016" timestamp="1582880524316" />
     <state x="981" y="161" key="SettingsEditor/0.23.1920.1018@0.23.1920.1018" timestamp="1582792647082" />
     <state x="718" y="259" key="Vcs.Push.Dialog.v2" timestamp="1582884768916">
@@ -290,16 +324,18 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state width="512" height="509" key="XDebugger.FullValuePopup/0.23.1920.1018@0.23.1920.1018" timestamp="1582622230437" />
-    <state x="598" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583138902598">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="598" y="377" key="com.intellij.ide.util.TipDialog" timestamp="1583426802999">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="598" y="377" key="com.intellij.ide.util.TipDialog/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583426802999" />
     <state x="598" y="377" key="com.intellij.ide.util.TipDialog/0.1103.1440.877/0.23.1920.1057/-1366.335.1366.745@0.1103.1440.877" timestamp="1582994365532" />
     <state x="598" y="363" key="com.intellij.ide.util.TipDialog/0.23.1920.1016@0.23.1920.1016" timestamp="1583138902598" />
     <state x="598" y="364" key="com.intellij.ide.util.TipDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582792710148" />
     <state x="598" y="377" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/-1366.223.1366.745@0.23.1920.1057" timestamp="1582993770218" />
-    <state x="708" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583144662860">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="708" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583426370446">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="708" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583426370446" />
     <state x="708" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1016@0.23.1920.1016" timestamp="1583144662860" />
     <state x="1081" y="157" width="717" height="750" key="find.popup" timestamp="1582689947732">
       <screen x="0" y="23" width="1920" height="1018" />
@@ -309,10 +345,12 @@
       <screen x="0" y="23" width="1920" height="1018" />
     </state>
     <state x="213" y="160" key="refactoring.ChangeSignatureDialog/0.23.1920.1018@0.23.1920.1018" timestamp="1582620377503" />
-    <state x="1132" y="246" width="672" height="677" key="search.everywhere.popup" timestamp="1583308792765">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="1132" y="254" width="894" height="706" key="search.everywhere.popup" timestamp="1583425855788">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="1132" y="254" width="894" height="706" key="search.everywhere.popup/-1366.223.1366.745/0.23.1920.1057@0.23.1920.1057" timestamp="1583425855788" />
     <state x="1132" y="237" width="672" height="720" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583223407742" />
+    <state x="849" y="215" width="670" height="585" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583381273911" />
     <state x="1132" y="246" width="672" height="677" key="search.everywhere.popup/0.23.1920.1016@0.23.1920.1016" timestamp="1583308792765" />
     <state x="1132" y="246" width="672" height="678" key="search.everywhere.popup/0.23.1920.1018@0.23.1920.1018" timestamp="1582692335652" />
   </component>
@@ -344,6 +382,41 @@
           <url>file://$PROJECT_DIR$/src/pages/NonFoodItemPage.java</url>
           <line>105</line>
           <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/food/FoodListPageTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/food/FoodListPageTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/food/FoodListPageTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/FoodPage.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testcases/food/FoodListPageTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/FoodPage.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pages/FoodPage.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -16,3 +16,17 @@ O
 :
 
 testng.xml,5/2/522a7a4e21649af06297e31a9e33f13bb4fd3022
+L
+src/pages/DashboardPage.java,3/e/3e3bcbf0cee1b800abe6d1682df02c16228690c5
+N
+src/pages/NonFoodItemPage.java,3/6/367c451853a9c16613d142d1692450de4659f73e
+O
+src/utils/UserLevelAccount.java,d/f/df1a892ab7ba2e80c3e8def50863817533f3485b
+X
+(src/testcases/food/FoodListPageTest.java,5/a/5a298f12d3ee49a73ea352981b148b74414eab94
+G
+src/pages/FoodPage.java,e/9/e99d4a19b4e16bec276f5c2ecf71cb1cdcd83a9c
+]
+-src/testcases/nonfood/NonFoodAddEditTest.java,6/e/6e8ec1f319a0f07f2931119d091339818840c972
+W
+'src/testcases/food/FoodAddEditTest.java,2/a/2ab17c4e209395b9d652f9de9e8acb1cbc754c7f
